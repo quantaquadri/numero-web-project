@@ -30,6 +30,7 @@
     right: 20%;
      bottom: -280px;
 }
+
 #grad {
     background: linear-gradient(180deg,
         rgba(255, 255, 255, 0) 0%,
@@ -38,4 +39,77 @@
     text-align: center;
     padding: 200px 0 50px;
     position: relative;
+  }
+
+  .heading{
+     color: #04004D;
+      font-family: 'TT Commons', sans-serif;
+      font-weight: bold;
+  }
+  .heading1{
+     color: #ffff;
+      font-family: 'TT Commons', sans-serif;
+      font-weight: bold;
+  }
+  .text{
+    font-family: 'TT Commons', sans-serif;
+ 
+  }
+  .text1{
+    font-family: 'TT Commons', sans-serif;
+    color: #ffff;
+ 
+  }
+
+
+  /* ////////////////////////////////////////////////////////////// */
+
+  #new {
+    background-image: linear-gradient(
+        to right,
+        rgba(0, 0, 0, 0.2),
+        rgba(0, 0, 0, 0.2)
+      ),
+      url(../images/Group\ 2832.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 150px;
+  }
+  .card {
+    width: 350px;
+    /* padding: 20px; */
+    border-radius: 17px;
+    box-shadow: 2px 2px 4px rgba(77, 76, 76, 0.19);
+    min-height: 470px;
+  }
+  #old {
+    height: 590px;
+    left: 4px;
+    background: #421961;
+  }
+  .box {
+    background-color: white;
+    padding: 20px;
+    border-radius: 20px;
+    width: 400px;
+    margin-bottom: 30px;
+  }
+  .vertical {
+      border-left: 3px dotted rgb(255, 255, 255);
+      height: 300px;
+      position:absolute;
+      left: 36%;
+  }
+  .vertical1 {
+      border-left: 3px dotted rgb(255, 255, 255);
+      height: 300px;
+      position:absolute;
+      left: 50%;
+  }
+  .vertical2 {
+      border-left: 3px dotted rgb(255, 255, 255);
+      height: 300px;
+      position:absolute;
+      left: 63%;
   }
