@@ -56,8 +56,12 @@
     font-family: 'TT Commons', sans-serif;
     font-weight: 700;
     font-size: 42px;
-    
-
+  }
+  .new-heading1{
+    color: #04004D;
+    font-family: 'TT Commons', sans-serif;
+    font-weight: 700;
+    font-size: 32px;
   }
   .heading1{
      color: #ffff;

@@ -24,19 +24,11 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
     />
+    <link rel="stylesheet" href="css/Fresh.css">
     <title></title>
   </head>
   <style>
-    #grad {
-      background: linear-gradient(
-        180deg,
-        rgba(255, 255, 255, 0) 0%,
-        rgba(165, 134, 234, 0.1) 69.67%,
-        rgba(152, 116, 231, 0.05) 93.45%
-      );
-      text-align: center;
-      padding: 50px;
-    }
+    
     .input-icons i {
       position: absolute;
     }
@@ -76,86 +68,50 @@
     }
   </style>
   <body>
-    <nav style="margin-top: 20px" class="navbar navbar-expand-lg">
-      <img src="images/Group11.png" alt="" />
-      <!-- <a style="color:#2D0050;font-family: 'Patua One', cursive;font-size: 30px;" class="navbar-brand" href="#">NUMERO</a> -->
-      <button
-        class="navbar-toggler"
-        type="button"
-        data-toggle="collapse"
-        data-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
-      >
-        <span class="navbar-toggler-icon"></span>
-      </button>
+    <header class="header" id="header">
+      <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="header-container">
+          <a class="navbar-brand" href="index.html">
+            <img src="images/Frame.png" alt="" class="navbar-logo">
+          </a>
+          <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#main_nav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="main_nav">
+            <ul class="navbar-nav">
+              <li class="nav-item"><a class="nav-link" href="business.html">About</a></li>
+  
+              <li class="nav-item"><a class="nav-link" href="shopper.html"> Features </a></li>
+  
+              <li class="nav-item"><a class="nav-link" href="shopper.html"> Pricing </a></li>
+  
+              <li class="nav-item"><a class="nav-link" href="shopper.html"> Faqs </a></li>
+  
+              <li class="nav-item"><a class="nav-link" href="shopper.html"> Blog </a></li>
+            </ul>
+  
+            <div class="navbar-button">
+              <a href="">
+                <img src="images/ggplay.png" alt="" class="navbar-btn" style="margin-right: 20px;">
+              </a>
+  
+              <a href="">
+                <img src="images/appstore.png" alt="" class="navbar-btn">
+              </a>
+            </div>
+          </div> <!-- navbar-collapse.// -->
+        </div> <!-- container-fluid.// -->
+      </nav>
+    </header>
 
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul
-          style="
-            background-color: rgb(241, 238, 238);
-            padding: 10px;
-            margin-left: 250px;
-            border-radius: 20px;
-          "
-          class="navbar-nav mr-auto"
-        >
-          <li class="nav-item active">
-            <a style="color: black; margin-right: 30px" class="nav-link" href=""
-              >Home<span class="sr-only">(current)</span></a
-            >
-          </li>
-          <li class="nav-item">
-            <a
-              style="color: black; margin-right: 30px"
-              class="nav-link"
-              href="#"
-              >Features</a
-            >
-          </li>
-          <li class="nav-item">
-            <a
-              style="color: black; margin-right: 30px"
-              class="nav-link"
-              href="#"
-              >Pricing</a
-            >
-          </li>
-          <li class="nav-item">
-            <a
-              style="color: black; margin-right: 30px"
-              class="nav-link"
-              href="#"
-              >Faqs</a
-            >
-          </li>
-          <li class="nav-item">
-            <a
-              style="color: black; margin-right: 30px"
-              class="nav-link"
-              href="#"
-              >Blog</a
-            >
-          </li>
-        </ul>
-        <div class="">
-          <img width="100px" src="images/128x128.png" class="mr-2" alt="" />
-          <img width="100px" src="images/apple.png" alt="" />
-        </div>
-      </div>
-    </nav>
-
-    <div id="grad" class="" style="position: relative; height: 400px">
-      <h2
-        style="
-          font-size: 90px;
-          font-family: 'Patua One', cursive;
-          color: #04004d;
-        "
+    <div id="grad"  class="hero-text2" style="position: relative; height: 400px">
+      <h1
       >
         Blog & Updates
-      </h2>
+      </h1>
       <form
         action=""
         style="
@@ -189,16 +145,12 @@
             alt=""
           />
           <h2
-            style="
-              color: #04004d;
-              font-family: 'Patua One';
-              margin-bottom: 30px;
-            "
+            class="new-heading1"
           >
             A place for your <br />
             company’s money
           </h2>
-          <p style="margin-bottom: 30px">
+          <p class="text" style="margin-bottom: 30px">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
             ad minim veniam, quis nostrud exercitation .
@@ -231,16 +183,12 @@
             alt=""
           />
           <h2
-            style="
-              color: #04004d;
-              font-family: 'Patua One';
-              margin-bottom: 30px;
-            "
+           class="new-heading1"
           >
             A place for your <br />
             company’s money
           </h2>
-          <p style="margin-bottom: 30px">
+          <p class="text" style="margin-bottom: 30px">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
             ad minim veniam, quis nostrud exercitation .
@@ -269,16 +217,12 @@
             alt=""
           />
           <h2
-            style="
-              color: #04004d;
-              font-family: 'Patua One';
-              margin-bottom: 30px;
-            "
+          class="new-heading1"
           >
             A place for your <br />
             company’s money
           </h2>
-          <p style="margin-bottom: 30px">
+          <p class="text" style="margin-bottom: 30px">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
             ad minim veniam, quis nostrud exercitation .
@@ -311,11 +255,7 @@
             alt=""
           />
           <h2
-            style="
-              color: #04004d;
-              font-family: 'Patua One';
-              margin-bottom: 30px;
-            "
+            class="new-heading1"
           >
             A place for your <br />
             company’s money
@@ -325,7 +265,7 @@
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
             ad minim veniam, quis nostrud exercitation .
           </p>
-          <div style="display: flex">
+          <div class="text" style="display: flex">
             <a
               style="margin-right: 10px; text-decoration: none; color: #6d3cc8"
               href="#"
@@ -349,16 +289,12 @@
             alt=""
           />
           <h2
-            style="
-              color: #04004d;
-              font-family: 'Patua One';
-              margin-bottom: 30px;
-            "
+           class="new-heading1"
           >
             A place for your <br />
             company’s money
           </h2>
-          <p style="margin-bottom: 30px">
+          <p class="text" style="margin-bottom: 30px">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
             ad minim veniam, quis nostrud exercitation .
@@ -396,16 +332,12 @@
             alt=""
           />
           <h2
-            style="
-              color: #04004d;
-              font-family: 'Patua One';
-              margin-bottom: 30px;
-            "
+           class="new-heading1"
           >
             A place for your <br />
             company’s money
           </h2>
-          <p style="margin-bottom: 30px">
+          <p class="text" style="margin-bottom: 30px">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
             ad minim veniam, quis nostrud exercitation .
@@ -438,16 +370,12 @@
             alt=""
           />
           <h2
-            style="
-              color: #04004d;
-              font-family: 'Patua One';
-              margin-bottom: 30px;
-            "
+           class="new-heading1"
           >
             A place for your <br />
             company’s money
           </h2>
-          <p style="margin-bottom: 30px">
+          <p class="text" style="margin-bottom: 30px">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
             ad minim veniam, quis nostrud exercitation .
@@ -476,16 +404,12 @@
             alt=""
           />
           <h2
-            style="
-              color: #04004d;
-              font-family: 'Patua One';
-              margin-bottom: 30px;
-            "
+          class="new-heading1"
           >
             A place for your <br />
             company’s money
           </h2>
-          <p style="margin-bottom: 30px">
+          <p class="text" style="margin-bottom: 30px">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
             ad minim veniam, quis nostrud exercitation .
