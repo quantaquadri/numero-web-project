@@ -24,208 +24,129 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
     />
+    <link rel="stylesheet" href="css/Fresh.css">
     <title></title>
   </head>
   <style>
-    #grad {
-      background: linear-gradient(
-        180deg,
-        rgba(255, 255, 255, 0) 0%,
-        rgba(165, 134, 234, 0.1) 69.67%,
-        rgba(152, 116, 231, 0.05) 93.45%
-      );
-      text-align: center;
-      padding: 50px;
-      position: relative;
-    }
-    #aboutsection {
-      margin-top: 200px;
-      background-color: #f9fafc;
-      width: 900px;
-      margin-left: 200px;
-      padding: 70px;
-    }
-    #old {
-      height: 590px;
-      left: 4px;
-      background-color: #F9FAFC;
-    }
-    .box {
-      background-color: white;
-      padding: 20px;
-      border-radius: 20px;
-      width: 400px;
-      margin-bottom: 30px;
-      box-shadow: 0px 4px 24px rgba(0, 0, 0, 0.05);
-    }
-    .vertical {
-        border-left: 3px dotted rgb(255, 255, 255);
-        height: 300px;
-        position:absolute;
-        left: 36%;
-    }
-    .vertical1 {
-        border-left: 3px dotted rgb(255, 255, 255);
-        height: 300px;
-        position:absolute;
-        left: 50%;
-    }
-    .vertical2 {
-        border-left: 3px dotted rgb(255, 255, 255);
-        height: 300px;
-        position:absolute;
-        left: 63%;
-    }
+    
   </style>
   <body>
-    <nav style="margin-top: 20px" class="navbar navbar-expand-lg">
-      <img src="images/Group11.png" alt="" />
-      <!-- <a style="color:#2D0050;font-family: 'Patua One', cursive;font-size: 30px;" class="navbar-brand" href="#">NUMERO</a> -->
-      <button
-        class="navbar-toggler"
-        type="button"
-        data-toggle="collapse"
-        data-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
-      >
-        <span class="navbar-toggler-icon"></span>
-      </button>
+    <header class="header" id="header">
+      <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="header-container">
+          <a class="navbar-brand" href="index.html">
+            <img src="images/Frame.png" alt="" class="navbar-logo">
+          </a>
+          <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#main_nav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="main_nav">
+            <ul class="navbar-nav">
+              <li class="nav-item"><a class="nav-link" href="business.html">About</a></li>
+  
+              <li class="nav-item"><a class="nav-link" href="shopper.html"> Features </a></li>
+  
+              <li class="nav-item"><a class="nav-link" href="shopper.html"> Pricing </a></li>
+  
+              <li class="nav-item"><a class="nav-link" href="shopper.html"> Faqs </a></li>
+  
+              <li class="nav-item"><a class="nav-link" href="shopper.html"> Blog </a></li>
+            </ul>
+  
+            <div class="navbar-button">
+              <a href="">
+                <img src="images/ggplay.png" alt="" class="navbar-btn" style="margin-right: 20px;">
+              </a>
+  
+              <a href="">
+                <img src="images/appstore.png" alt="" class="navbar-btn">
+              </a>
+            </div>
+          </div> <!-- navbar-collapse.// -->
+        </div> <!-- container-fluid.// -->
+      </nav>
+    </header>
 
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul
-          style="
-            background-color: rgb(241, 238, 238);
-            padding: 10px;
-            margin-left: 250px;
-            border-radius: 20px;
-          "
-          class="navbar-nav mr-auto"
-        >
-          <li class="nav-item active">
-            <a style="color: black; margin-right: 30px" class="nav-link" href=""
-              >Home<span class="sr-only">(current)</span></a
-            >
-          </li>
-          <li class="nav-item">
-            <a
-              style="color: black; margin-right: 30px"
-              class="nav-link"
-              href="#"
-              >Features</a
-            >
-          </li>
-          <li class="nav-item">
-            <a
-              style="color: black; margin-right: 30px"
-              class="nav-link"
-              href="#"
-              >Pricing</a
-            >
-          </li>
-          <li class="nav-item">
-            <a
-              style="color: black; margin-right: 30px"
-              class="nav-link"
-              href="#"
-              >Faqs</a
-            >
-          </li>
-          <li class="nav-item">
-            <a
-              style="color: black; margin-right: 30px"
-              class="nav-link"
-              href="#"
-              >Blog</a
-            >
-          </li>
-        </ul>
-        <div class="">
-          <img width="100px" src="images/128x128.png" class="mr-2" alt="" />
-          <img width="100px" src="images/apple.png" alt="" />
-        </div>
-      </div>
-    </nav>
-
-    <div id="grad">
+    <div style=" background-image: url(images/Group\ 2836.png); 
+    height: 720px;" id="grad1">
       <div class="container">
         <div class="row">
-          <div class="col-md-6">
-            <h2
-              style="font-family: 'Patua One'; font-size: 60px; color: #04004d"
-            >
-              Smarter Business <br />
-              Banking For Today's <br />
-              Entrepreneurs
-            </h2>
-            <p>We enjoy the work we do and we enjoy making your life easier.</p>
+          <div class="col-md-6 ">
+            <div class="hero-text1">
+              <h1>
+                Smarter Business <br />
+                Banking For Today's <br />
+                Entrepreneurs
+              </h1>
+              <p class="allP">We enjoy the work we do and we enjoy making your <br> life easier.</p>
+            </div>
           </div>
-          <div style="position: absolute; margin-left: 550px" class="col-md-6">
-            <img width="500px" src="images/Group 2833.png" alt="" />
+          <div class="col-md-6">
+            <img class="mt-5" src="images/Group 2837.png" alt="" />
           </div>
         </div>
       </div>
     </div>
 
     <div id="aboutsection">
-      <div class="">
-        <img class="mb-5" src="images/Group 1938.png" alt="" />
-        <h3 class="mb-4" style="font-family: 'Patua One'; color: #04004d">
+      <div style="padding: 80px;" class="container">
+        <img class="mb-3" width="50px" src="images/Group 1938.png" alt="" />
+        <h3 class="new-heading">
           What Are We Doing?
         </h3>
-        <p>
+        <p class="text">
           We want to serve the next generation of freelancers and companies and
           <br />
           make business banking easier and better for them.
         </p>
+        <img style="position: absolute; right: 0;top: 0;" height="auto" width="150px" src="images/Group 2838.png" alt="">
       </div>
+        <img
+          width="990px"
+          class=" img-fluid"
+          src="images/Rectangle 444.png"
+          alt=""
+        />
     </div>
 
-    <div>
-      <img
-        width="990px"
-        style="margin-left: 170px"
-        class="mb-5"
-        src="images/Rectangle 444.png"
-        alt=""
-      />
-    </div>
 
     <div class="container mb-5">
       <div class="row">
         <div
-          style="background-color: #f9fafc; padding: 50px; border-radius: 15px"
-          class="col-md-6 mr-4"
+         
+          class="col-md-6 mr-4 about-side"
         >
           <img class="mb-5" src="images/Group 1938.png" alt="" />
-          <h3 class="mb-4" style="font-family: 'Patua One'; color: #04004d">
+          <h3 class="heading">
             Our Mission
           </h3>
-          <p>To simplify the business of Business Banking for SMEs in Africa</p>
+          <p class="text">To simplify the business of Business Banking for SMEs in Africa</p>
         </div>
         <div
-          style="background-color: #f9fafc; padding: 50px; border-radius: 15px"
-          class="col-md-5"
+         
+          class="col-md-5 about-side"
         >
           <img class="mb-5" src="images/Group 1938.png" alt="" />
-          <h3 class="mb-4" style="font-family: 'Patua One'; color: #04004d">
+          <h3 class="heading">
             Our Vision
           </h3>
-          <p>To be Africa's frontier digital bank for business</p>
+          <p class="text">To be Africa's frontier digital bank for business</p>
         </div>
       </div>
     </div>
     <section class="mb-5">
       <div>
-        <img width="1340px" src="images/Rectangle 832.png" alt="" />
+        <img width="1440px" src="images/Rectangle 832.png" alt="" />
       </div>
     </section>
     <div style="padding: 70px" class="text-center">
-      <h1 style="font-family: 'Patua One'; color: #04004d; margin-bottom: 30px">
+      <h1 class="heading">
         WHO WE ARE
       </h1>
-      <p style="margin-bottom: 20px">
+      <p class="text">
         Numero is powered by some of the brightest minds from tech to financial
         services, and we are all <br />
         working toward one goal: changing the way businesses bank - everywhere.
@@ -243,7 +164,7 @@
           style="background-color: #f9fafc; padding: 90px"
           class="col-md-6 text-center"
         >
-          <h3 style="font-family: 'Patua One'; color: #040407; font-size: 50px">
+          <h3 class="big-heading">
             Access Cash 24/7
           </h3>
         </div>
@@ -268,7 +189,7 @@
           style="background-color: #f9fafc; padding: 90px"
           class="col-md-6 text-center"
         >
-          <h3 style="font-family: 'Patua One'; color: #040407; font-size: 50px">
+          <h3 class="big-heading">
             No Collaterals
           </h3>
         </div>
@@ -281,7 +202,7 @@
           style="background-color: #f9fafc; padding: 90px"
           class="col-md-6 text-center"
         >
-          <h3 style="font-family: 'Patua One'; color: #040407; font-size: 50px">
+          <h3 class="big-heading">
             Happens Within Minutes
           </h3>
         </div>
@@ -294,21 +215,16 @@
       </div>
     </div>
 
-    <div id="old">
+    <div id="old1">
         <div class="container">
           <div class="row">
-            <div style="margin-top: 120px;
-            background-color: #FFFFFF; padding: 40px; margin-bottom: 130px;" class="col-md-6">
+            <div  class="col-md-6 forHeading">
               <h2
-                style="
-                  color: #04004D ;
-                  font-family: 'Patua One';
-                  margin-bottom: 20px;
-                "
+               class="heading"
               >
               A place for your <br> company’s money
               </h2>
-              <p style="color: rgb(8, 8, 8); margin-bottom: 20px">
+              <p class="text">
                 Getting incorporated doesn't have to be a hassle. We're <br />
                 working on making that easy for you and your business.
               </p>
