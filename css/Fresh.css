@@ -229,6 +229,12 @@
     color: #04004d;
     margin-left: 180px;
   }
+  .new-hero>h1 {
+    font-size: 39px;
+    font-family: 'TT Commons', sans-serif;
+    font-weight: 600;
+    color: #ffff;
+  }
   .hero-text2>h1 {
     font-size: 59px;
     font-family: 'TT Commons', sans-serif;
@@ -307,6 +313,19 @@
   padding: 90px;
   border-radius: 20px;
 }
+
+.content {
+  background-color: #f9fafc;
+  width: 900px;
+  color: #a8a8a8;
+  padding: 30px;
+  border-radius: 10px;
+}
+.thick{
+  color: black; 
+  margin-bottom: 40px; 
+  font-family:'TT Commons', sans-serif;
+}
 /* //////////////////////////////////////////////// */
   @media all and (max-width:768px) {
     #grad {
@@ -328,6 +347,12 @@
     font-family: 'Montserrat',
       sans-serif;
     position: absolute;
+    margin: 0 auto;
+    width: 100%;
+  }
+  .header1 {
+    font-family: 'Montserrat',
+      sans-serif;
     margin: 0 auto;
     width: 100%;
   }

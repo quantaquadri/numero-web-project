@@ -24,109 +24,70 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
     />
+    <link rel="stylesheet" href="css/Fresh.css">
     <title></title>
   </head>
   <style>
-    #grad {
-      background: linear-gradient(
-        180deg,
-        rgba(255, 255, 255, 0) 0%,
-        rgba(165, 134, 234, 0.1) 69.67%,
-        rgba(152, 116, 231, 0.05) 93.45%
-      );
-      text-align: center;
-      padding: 50px;
-    }
+    
   </style>
   <body>
-    <nav style="margin-top: 20px" class="navbar navbar-expand-lg">
-      <img src="images/Group11.png" alt="" />
-      <!-- <a style="color:#2D0050;font-family: 'Patua One', cursive;font-size: 30px;" class="navbar-brand" href="#">NUMERO</a> -->
-      <button
-        class="navbar-toggler"
-        type="button"
-        data-toggle="collapse"
-        data-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
-      >
-        <span class="navbar-toggler-icon"></span>
-      </button>
-
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul
-          style="
-            background-color: rgb(241, 238, 238);
-            padding: 10px;
-            margin-left: 250px;
-            border-radius: 20px;
-          "
-          class="navbar-nav mr-auto"
-        >
-          <li class="nav-item active">
-            <a style="color: black; margin-right: 30px" class="nav-link" href=""
-              >Home<span class="sr-only">(current)</span></a
-            >
-          </li>
-          <li class="nav-item">
-            <a
-              style="color: black; margin-right: 30px"
-              class="nav-link"
-              href="#"
-              >Features</a
-            >
-          </li>
-          <li class="nav-item">
-            <a
-              style="color: black; margin-right: 30px"
-              class="nav-link"
-              href="#"
-              >Pricing</a
-            >
-          </li>
-          <li class="nav-item">
-            <a
-              style="color: black; margin-right: 30px"
-              class="nav-link"
-              href="#"
-              >Faqs</a
-            >
-          </li>
-          <li class="nav-item">
-            <a
-              style="color: black; margin-right: 30px"
-              class="nav-link"
-              href="#"
-              >Blog</a
-            >
-          </li>
-        </ul>
-        <div class="">
-          <img width="100px" src="images/128x128.png" class="mr-2" alt="" />
-          <img width="100px" src="images/apple.png" alt="" />
-        </div>
-      </div>
-    </nav>
+    <header class="header1" id="header">
+      <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="header-container">
+          <a class="navbar-brand" href="index.html">
+            <img src="images/Frame.png" alt="" class="navbar-logo">
+          </a>
+          <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#main_nav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="main_nav">
+            <ul class="navbar-nav">
+              <li class="nav-item"><a class="nav-link" href="business.html">About</a></li>
+  
+              <li class="nav-item"><a class="nav-link" href="shopper.html"> Features </a></li>
+  
+              <li class="nav-item"><a class="nav-link" href="shopper.html"> Pricing </a></li>
+  
+              <li class="nav-item"><a class="nav-link" href="shopper.html"> Faqs </a></li>
+  
+              <li class="nav-item"><a class="nav-link" href="shopper.html"> Blog </a></li>
+            </ul>
+  
+            <div class="navbar-button">
+              <a href="">
+                <img src="images/ggplay.png" alt="" class="navbar-btn" style="margin-right: 20px;">
+              </a>
+  
+              <a href="">
+                <img src="images/appstore.png" alt="" class="navbar-btn">
+              </a>
+            </div>
+          </div> <!-- navbar-collapse.// -->
+        </div> <!-- container-fluid.// -->
+      </nav>
+    </header>   
     <div
+    
       style="
-        background-image: url(images/blog-banner.png);
+        background-image: url(images/Rectangle\ Copy\ 90.png);
         border-radius: 10px;
-        padding: 30px;
-      "
-      class=""
+        padding: 60px;
+      " 
     >
       <div class="row text-white p-5">
         <div class="col-md-5 col-sm-6 col-xl-5">
-          <div class="badge badge-light px-3 py-1">
-            <img src="images/Group 1938.png" width="30" alt="" />
+          <div class="badge badge-light px-3 py-1 img-fluid mb-3">
+            <img  src="images/Group 1938.png" width="30" alt="" />
             <span style="color: #6d3cc8">#Finance</span>
           </div>
-          <div>
-            <h1 style="font-family: 'Patua One'">
+          <div class="new-hero">
+            <h1>
               A place for your company's money
             </h1>
-            <p>
+            <p class="text">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
               enim ad minim veniam, quis nostrud exercitation .
@@ -136,17 +97,11 @@
       </div>
     </div>
     <div
-      style="
-        background-color: #f9fafc;
-        width: 900px;
-        color: #a8a8a8;
-        padding: 30px;
-        border-radius: 10px;
-      "
-      class="container text-center"
+      
+      class="content container text-center"
     >
       <div>
-        <p class="mb-5">
+        <p class="text mb-5">
           Color is so powerful that it can persuade, motivate, inspire and touch
           people’s soft spot – the <br />
           heart. This is the reason why understanding colors is pretty crucial
@@ -154,10 +109,10 @@
           with other people. Not only that, it is also important to businesses
           in order for their business to sell <br />
         </p>
-        <div style="color: black; margin-bottom: 40px">
-          <h6>There are many uses of colors.Here are some of the many:</h6>
+        <div >
+          <h6 class="thick">There are many uses of colors.Here are some of the many:</h6>
         </div>
-        <p class="mb-5">
+        <p class="text mb-5">
           1. Commercial Offset Printing. In the commercial printing industry as
           well as the online printing <br />
           services interface, colors are essential to ascertain the efficiency
@@ -172,6 +127,7 @@
             padding: 20px;
             border-radius: 20px;
             margin-bottom: 40px;
+            font-family: 'TT Commons', sans-serif;
           "
         >
           <h6>
@@ -186,7 +142,7 @@
             printing 2-colored logos and postcards.
           </h6>
         </div>
-        <p class="mb-5">
+        <p class="mb-5 text">
           This process is one of the cheapest among the printing processes
           available these days. Pantone or <br />
           PMS (Pantone Matching System) is a color system of mixed inks. If you
@@ -211,7 +167,7 @@
           first then your choice of paint. That way it will be easy to pick
           paint colors.
         </p>
-        <p class="mb-5">
+        <p class="mb-5 text">
           4. Desktop Printers. Use the four-color printing system to reflect an
           accurate color for your <br />
           documents, pictures and graphics. What you see on your monitor may not
@@ -228,15 +184,15 @@
         <hr style="border: 3px solid #F2F4F9">
     </div>
     <div class="text-center mb-5">
-        <h2 style="color:  #04004D;font-family: 'Patua One';">More Articles</h2>
-        <p>
+        <h2 class="heading">More Articles</h2>
+        <p class="text">
             This platform makes it possible for employers and colleagues <br> to report misconducts of any domestic staff.
         </p>
     </div>
     <div class="container">
         <div class="row">
           <div style="border-radius: 20px" class="col-md-6 mr-4 mb-5">
-            <img class="mb-4" src="images/Rectangle Copy 90.png" alt="" />
+            <img class="mb-4" src="images/Rectangle Copy 900.png" alt="" />
             <img
               style="margin-bottom: 30px"
               width="50px"
@@ -244,16 +200,12 @@
               alt=""
             />
             <h2
-              style="
-                color: #04004d;
-                font-family: 'Patua One';
-                margin-bottom: 30px;
-              "
+            class="new-heading1"
             >
               A place for your <br />
               company’s money
             </h2>
-            <p style="margin-bottom: 30px">
+            <p class="text">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
               ad minim veniam, quis nostrud exercitation .
@@ -282,16 +234,12 @@
               alt=""
             />
             <h2
-              style="
-                color: #04004d;
-                font-family: 'Patua One';
-                margin-bottom: 30px;
-              "
+             class="new-heading1"
             >
               A place for your <br />
               company’s money
             </h2>
-            <p style="margin-bottom: 30px">
+            <p class="text">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
               ad minim veniam, quis nostrud exercitation .
