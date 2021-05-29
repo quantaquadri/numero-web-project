@@ -1,549 +1,532 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
-      integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l"
-      crossorigin="anonymous"
-    />
-    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Patua+One&family=Unlock&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/fontawesome.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
-    />
-    <title></title>
-  </head>
-  <style>
-    #grad {
-      background: linear-gradient(
-        180deg,
-        rgba(255, 255, 255, 0) 0%,
-        rgba(165, 134, 234, 0.1) 69.67%,
-        rgba(152, 116, 231, 0.05) 93.45%
-      );
-      text-align: center;
-      padding: 50px;
-    }
 
-    .documentation li .active {
-      border-radius: 10px;
-      border: 1px solid #6d3cc8;
-      box-shadow: 0px 4px 24px 10px rgba(0, 0, 0, 0.05);
-      padding: 10px 30px;
-      background-color: #f5f2fd;
-    }
-  </style>
-  <body>
-    <nav style="margin-top: 20px" class="navbar navbar-expand-lg">
-      <img src="images/Group11.png" alt="" />
-      <!-- <a style="color:#2D0050;font-family: 'Patua One', cursive;font-size: 30px;" class="navbar-brand" href="#">NUMERO</a> -->
-      <button
-        class="navbar-toggler"
-        type="button"
-        data-toggle="collapse"
-        data-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
-      >
-        <span class="navbar-toggler-icon"></span>
-      </button>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Numero</title>
+    <!-- FONTS CSS CDN -->
+    <!-- TT COMMONS CDN -->
+    <link href="http://fonts.cdnfonts.com/css/tt-commons" rel="stylesheet">
+    <!-- TT COMMONS CDN -->
+    <!-- FONTS CSS CDN -->
+    <!-- BOOTSTRAP CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <!-- BOOTSTRAP CSS -->
 
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul
-          style="
-            background-color: rgb(241, 238, 238);
-            padding: 10px;
-            margin-left: 250px;
-            border-radius: 20px;
-          "
-          class="navbar-nav mr-auto"
-        >
-          <li class="nav-item active">
-            <a style="color: black; margin-right: 30px" class="nav-link" href=""
-              >Home<span class="sr-only">(current)</span></a
-            >
-          </li>
-          <li class="nav-item">
-            <a
-              style="color: black; margin-right: 30px"
-              class="nav-link"
-              href="#"
-              >Features</a
-            >
-          </li>
-          <li class="nav-item">
-            <a
-              style="color: black; margin-right: 30px"
-              class="nav-link"
-              href="#"
-              >Pricing</a
-            >
-          </li>
-          <li class="nav-item">
-            <a
-              style="color: black; margin-right: 30px"
-              class="nav-link"
-              href="#"
-              >Faqs</a
-            >
-          </li>
-          <li class="nav-item">
-            <a
-              style="color: black; margin-right: 30px"
-              class="nav-link"
-              href="#"
-              >Blog</a
-            >
-          </li>
-        </ul>
-        <div class="">
-          <img width="100px" src="images/128x128.png" class="mr-2" alt="" />
-          <img width="100px" src="images/apple.png" alt="" />
+    <!-- EXTERNAL CSS -->
+    <link rel="stylesheet" href="developers.css">
+    <!-- EXTERNAL CSS -->
+</head>
+
+<body>
+    <!-- HEADER SECTION -->
+    <header class="header" id="header">
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <div class="header-container">
+                <a class="navbar-brand" href="index.html">
+                    <img src="img/nav-logo.png" alt="" class="navbar-logo">
+                </a>
+                <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#main_nav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="main_nav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item"><a class="nav-link" href="about-us.html">About </a></li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="features.html"> Features </a></li>
+
+                        <li class=" nav-item "><a class="nav-link " href="pricing.html "> Pricing </a></li>
+
+                        <li class="nav-item "><a class="nav-link " href="faq.html "> Faqs </a></li>
+
+                        <li class="nav-item "><a class="nav-link " href="blog.html "> Blog </a></li>
+
+                        <li class="nav-item nav-item-app ">
+                            <a class="nav-link " href="blog.html "> <img src="img/gp.png " alt=" " class="navbar-download "> </a>
+                        </li>
+
+                        <li class="nav-item nav-item-app ">
+                            <a class="nav-link " href="blog.html "> <img src="img/as.png " alt=" " class="navbar-download "> </a>
+                        </li>
+
+                    </ul>
+                </div>
+                <div class="navbar-app-wrapper2 ">
+                    <a class="navbar-app " href="index.html ">
+                        <img src="img/gp.png " alt=" " class="navbar-logo ">
+                    </a>
+                    <a class="navbar-app " href="index.html ">
+                        <img src="img/as.png " alt=" " class="navbar-logo ">
+                    </a>
+                </div>
+            </div>
+
+        </nav>
+    </header>
+    <!-- HEADER SECTION -->
+
+    <!-- HERO SECTION -->
+    <section class="hero" id="hero">
+        <div class="section-container">
+            <div class="hero-text">
+                <h1>Developers & Documentations </h1>
+                <h4>Build meaningful products with our APIs. For developers, by developers </h4>
+            </div>
         </div>
-      </div>
-    </nav>
+    </section>
+    <!-- HERO SECTION -->
 
-    <div id="grad">
-      <h2
-        style="
-          font-size: 50px;
-          font-family: 'Patua One', cursive;
-          color: #04004d;
-        "
-      >
-        Developers & Documentations
-      </h2>
-      <p
-        style="
-          font-family: sans-serif;
-          font-style: normal;
-          font-weight: normal;
-          margin-bottom: 30px;
-        "
-      >
-        Build meaningful products with our API's, For Developers by developers
-      </p>
-    </div>
-    <div  class="container mt-5 documentation">
-      <div class="row">
-        <div class="col-md-3">
-          <ul class="list-unstyled">
-            <li class="p-4">
-              <a style="text-decoration: none" href="#" class="active">
-                <img src="images/Dashboard.png" alt="" />
-                <span style="color: #04004d; font-family: 'Patua One'"
-                  >Home</span
-                >
-              </a>
-            </li>
-            <li class="p-5">
-              <a style="text-decoration: none" href="#" class="">
-                <img src="images/Dashboard.png" alt="" />
-                <span style="color: #04004d; font-family: 'Patua One'"
-                  >Transaction</span
-                >
-              </a>
-            </li>
-            <li class="p-5">
-              <a style="text-decoration: none" href="#" class=" ">
-                <img src="images/Dashboard.png" alt="" />
-                <span style="color: #04004d; font-family: 'Patua One'"
-                  >Wallet</span
-                >
-              </a>
-            </li>
-            <li class="p-5">
-              <a style="text-decoration: none" href="#" class=" ">
-                <img src="images/Dashboard.png" alt="" />
-                <span style="color: #04004d; font-family: 'Patua One'"
-                  >Transfers</span
-                >
-              </a>
-            </li>
-            <li class="p-5">
-              <a style="text-decoration: none" href="#" class=" ">
-                <img src="images/Dashboard.png" alt="" />
-                <span style="color: #04004d; font-family: 'Patua One'"
-                  >Invoice</span
-                >
-              </a>
-            </li>
-            <li class="p-5">
-              <a style="text-decoration: none" href="#" class=" ">
-                <img src="images/Dashboard.png" alt="" />
-                <span style="color: #04004d; font-family: 'Patua One'"
-                  >Issuing</span
-                >
-              </a>
-            </li>
-            <li class="p-5">
-              <a style="text-decoration: none" href="#" class=" ">
-                <img src="images/Dashboard.png" alt="" />
-                <span style="color: #04004d; font-family: 'Patua One'"
-                  >Settings</span
-                >
-              </a>
-            </li>
-            <li class="p-5">
-              <a style="text-decoration: none" href="#" class=" ">
-                <img src="images/Dashboard.png" alt="" />
-                <span style="color: #04004d; font-family: 'Patua One'"
-                  >My Business</span
-                >
-              </a>
-            </li>
-          </ul>
-        </div>
-        <div style="background-color: #F9FAFC;padding: 30px;border-radius: 10px;" class="col-md-9">
-          <form
-            action=""
-            style="
-              width: 600px;
-              background: #ffffff;
-              box-shadow: 0px 4px 24px 10px rgba(0, 0, 0, 0.05);
-            "
-          >
-            <input
-              type="text"
-              class="form-control p-4"
-              style="height: 10%; border-radius: 10px; margin-bottom: 100px"
-            />
-          </form>
-          <h2
-            style="
-              font-family: 'Patua One';
-              color: #04004d;
-              margin-bottom: 30px;
-            "
-          >
-            A place for your <br />
-            company’s money
-          </h2>
-          <p class="mb-5">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio
-            blanditiis illum doloribus rerum quasi, nemo animi inventore.
-            Dolore, provident architecto!
-          </p>
-
-          <h2 style="font-family: 'Patua One'; color: #04004d">QUICK START</h2>
-
-          <div class="mb-5">
-            <div class="row">
-              <div
-                style="background-color: #fbf7fd"
-                class="col-md-5 mx-3 shadow card"
-              >
-                <div class="p-2">
-                  <div class="row mb-3">
-                    <div class="col-md-6">
-                      <img src="./images/Icon.png" alt="" />
-                    </div>
-                    <div class="col-md-6">
-                      <span class="float-right mt-2">🟣</span>
-                    </div>
-                    <div class="px-3 mt-4">
+    <div class="container mt-5 documentation">
+        <div class="row">
+          <div class="col-md-3">
+            <ul class="list-unstyled">
+              <li class="p-5">
+                <a style="text-decoration: none" href="#" class="active">
+                  <img src="img/dashboard.png" alt="">
+                  <span class="docu-span">Home</span>
+                </a>
+              </li>
+              <li class="p-5">
+                <a style="text-decoration: none" href="#" class="">
+                  <img src="img/dashboard.png" alt="">
+                  <span class="docu-span">Transaction</span>
+                </a>
+              </li>
+              <li class="p-5">
+                <a style="text-decoration: none" href="#" class=" ">
+                  <img src="img/dashboard.png" alt="">
+                  <span class="docu-span">Wallet</span>
+                </a>
+              </li>
+              <li class="p-5">
+                <a style="text-decoration: none" href="#" class=" ">
+                  <img src="img/dashboard.png" alt="">
+                  <span class="docu-span">Transfers</span>
+                </a>
+              </li>
+              <li class="p-5">
+                <a style="text-decoration: none" href="#" class=" ">
+                  <img src="img/dashboard.png" alt="">
+                  <span class="docu-span">Invoice</span>
+                </a>
+              </li>
+              <li class="p-5">
+                <a style="text-decoration: none" href="#" class=" ">
+                  <img src="img/dashboard.png" alt="">
+                  <span class="docu-span">Issuing</span>
+                </a>
+              </li>
+              <li class="p-5">
+                <a style="text-decoration: none" href="#" class=" ">
+                  <img src="img/dashboard.png" alt="">
+                  <span class="docu-span">Settings</span>
+                </a>
+              </li>
+              <li class="p-5">
+                <a style="text-decoration: none" href="#" class=" ">
+                  <img src="img/dashboard.png" alt="">
+                  <span class="docu-span">My Business</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-9 docu-bg">
+            <form action="" class="form-style-2">
+              <input type="text" class="form-control p-4 form-style" placeholder="Type Search">
+            </form>
+            <h2 class="docu-span-h1">
+              A place for your <br>
+              company’s money
+            </h2>
+            <p class="mb-5 docu-span-p">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit   
+            </p>
+  
+            <h2 class="docu-h2">Quick start:</h2>
+  
+            <div class="mb-5">
+              <div class="row">
+                <div class="col-md-5 mx-3  card shadow-card-bg">
+                  <div class="p-2">
+                    <div class="row mb-3">
+                      <div class="col-md-6" > <br>
+                        <img src="img/icon.png" class="px-3" alt="">
+                      </div>
+                      <div class="col-md-6">
+                        <span class="float-right mt-2">🟣 </span>
+                      </div>
                       <div class="px-3 mt-4">
-                        <h5 class="mt-2">Developer/Freelancer</h5>
-                        <p>
-                          Lorem ipsum dolor sit amet consectetur adipisicing
-                          elit. Nostrum
-                        </p>
+                        <div class="px-3 mt-4">
+                          <h5 class="mt-2">Developer/Freelancer</h5>
+                          <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit. Nostrum
+                          </p>
+                        </div>
                       </div>
                     </div>
                   </div>
                 </div>
-              </div>
-              <div class="col-md-5 mx-3 shadow card">
-                <div class="p-2">
-                  <div class="row mb-3">
-                    <div class="col-md-6">
-                      <img src="./images/Icon.png" alt="" />
-                    </div>
-                    <div class="col-md-6">
-                      <span class="float-right mt-2">🟣</span>
-                    </div>
-                    <div class="px-3 mt-4">
-                      <h5 class="mt-2">Developer/Freelancer</h5>
-                      <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Nostrum
-                      </p>
+
+                <div class="col-md-5 mx-3 card">
+                  <div class="p-2">
+                    <div class="row mb-3">
+                      <div class="col-md-6" > <br>
+                        <img src="img/icon.png" class="px-3" alt="">
+                      </div>
+                      <div class="col-md-6">
+                        <span class="float-right mt-2">🟣 </span>
+                      </div>
+                      <div class="px-3 mt-4">
+                        <div class="px-3 mt-4">
+                          <h5 class="mt-2">Operations</h5>
+                          <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit. Nostrum
+                          </p>
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>
+
+                
               </div>
             </div>
-          </div>
-          <div class="">
-            <div class="row">
-              <div class="col-md-5 mx-3 shadow card">
-                <div class="p-2">
-                  <div class="row mb-3">
-                    <div class="col-md-6">
-                      <img src="./images/Icon.png" alt="" />
-                    </div>
-                    <div class="col-md-6">
-                      <span class="float-right mt-2">🟣</span>
-                    </div>
-                    <div class="px-3 mt-4">
-                      <h5 class="mt-2">Developer/Freelancer</h5>
-                      <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Nostrum
-                      </p>
+            
+            
+            <div class="">
+              <div class="row">
+                <div class="col-md-5 mx-3 card">
+                  <div class="p-2">
+                    <div class="row mb-3">
+                      <div class="col-md-6" > <br>
+                        <img src="img/icon.png" class="px-3" alt="">
+                      </div>
+                      <div class="col-md-6">
+                        <span class="float-right mt-2">🟣 </span>
+                      </div>
+                      <div class="px-3 mt-4">
+                        <div class="px-3 mt-4">
+                          <h5 class="mt-2">Director / Boardmember</h5>
+                          <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit. Nostrum
+                          </p>
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>
+
+                
+                <div class="col-md-5 mx-3 card">
+                  <div class="p-2">
+                    <div class="row mb-3">
+                      <div class="col-md-6" > <br>
+                        <img src="img/icon.png" class="px-3" alt="">
+                      </div>
+                      <div class="col-md-6">
+                        <span class="float-right mt-2">🟣 </span>
+                      </div>
+                      <div class="px-3 mt-4">
+                        <div class="px-3 mt-4">
+                          <h5 class="mt-2">Others</h5>
+                          <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit. Nostrum
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                
               </div>
-              <div class="col-md-5 mx-3 shadow card">
-                <div class="p-2">
-                  <div class="row mb-3">
-                    <div class="col-md-6">
-                      <img src="./images/Icon.png" alt="" />
-                    </div>
-                    <div class="col-md-6">
-                      <span class="float-right mt-2">🟣</span>
-                    </div>
-                    <h5 class="mt-2">Developer/Freelancer</h5>
+            </div>
+  
+            <div style="margin-top: 120px; margin-bottom: 20px">
+              
+              <h2 class="docu-h2">Accept a payment:</h2>
+              
+              <p class="docu-span-p">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Quibusdam, excepturi?
+              </p>
+            
+            </div>
+            
+            
+            <div class="container mt-5">
+              <div class="row">
+               
+                <div class="col-md-5 docu-dev-bg">
+                  
+                  <div>
+                    <img style="margin-bottom: 60px" src="img/group-1069.png" alt="">
+                    <h3 class="docu-h3">
+                      Before you login
+                    </h3>
                     <p>
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                      Nostrum, necessitatibus quod? Fugiat nobis accusantium
-                      asperiores libero debitis alias odit labore.
+                      Lorem ipsum dolor, sit amet consectetur 
+                      adipisicing elit. Eius a corporis esse consectetur veniam
+                      
+                      temporibus libero amet mollitia
+                      rerum perspiciatis!
                     </p>
+                    <a><button href="#"
+                      class="btn mt-2 docu-button">
+                        NEXT
+                      </button></a>
                   </div>
+                </div>
+                
+                
+                <div class="col-md-6 docu-dev-bg-2">
+                  
+                  <div style="display: flex;justify-content: space-between;align-items: center;margin-bottom: 10px;">
+                  
+                    <button class="docu-button-outline btn mt-2">
+                      POST
+                    </button>
+                  
+                    <div style=" display: flex;">
+  
+                      <p class="docu-bg-p">http://www.numero.com/ashsgsjgfdf</p>
+                      
+                    </div>
+                  
+                    <div>
+                      <p class="docu-bg-pv2">
+                        cURL
+                      </p>
+                    </div>
+                  
+                  </div>
+  
+                  <br>
+                  <img src="img/Rectangle 846.png" alt="">
+
                 </div>
               </div>
             </div>
-          </div>
 
-          <div style="margin-top: 120px; margin-bottom: 20px">
-            <h2 class="m-2" style="color: #483da9; font-family: 'Patua One'">
-              Accept a payment
-            </h2>
-            <p>
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-              Quibusdam, excepturi?
-            </p>
-          </div>
-          <div class="container mt-5">
-            <div class="row">
-              <div
-                style="background-color: #f9fafc; border-radius: 10px; padding: 20px;"
-                class="col-md-5"
-              >
-                <div>
-                  <img
-                    style="margin-bottom: 60px"
-                    src="images/Group 1069.png"
-                    alt=""
-                  />
-                  <h3
-                    style="
-                      color: #032041;
-                      font-family: 'Patua One';
-                      margin-bottom: 20px;
-                    "
-                  >
-                    Before you login
-                  </h3>
-                  <p>
-                    Lorem ipsum dolor, sit amet consectetur <br />
-                    adipisicing elit. Eius a corporis esse consectetur veniam
-                    <br />
-                    temporibus libero amet mollitia <br />
-                    rerum perspiciatis!
-                  </p>
-                  <a
-                    ><button
-                      href=""
-                      style="
-                        background-color: #6d3cc8;
-                        color: white;
-                        padding: 10px;
-                        width: 100px;
-                        margin-bottom: 10px;
-                        border-radius: 10px;
-                      "
-                      class="btn mt-2"
-                    >
-                      NEXT
-                    </button></a
-                  >
-                </div>
-              </div>
-              <div
-                style="background-color: #ffffff; border-radius: 10px; padding: 20px;"
-                class="col-md-7"
-              >
-                <div style="display: flex;justify-content: space-between;align-items: center;margin-bottom: 10px;">
-                  <button
-                    style="
-                      background-color: #edecf8;
-                      color: #483da9;
-                      border-radius: 10px;
-                      font-family: 'Patua One';
-                    "
-                    class="btn mt-2"
-                  >
-                    Post
-                  </button>
-                  <div style=" display: flex;">
 
-                    <p style="margin-bottom: 0; font-family: 'Patua One';">http://www.numero.com/ashsgsjgfdf</p>
-                    
-                  </div>
+            <div style="margin-top: 120px; margin-bottom: 20px">
+              
+              <h2 class="docu-h2">Make a transfer:</h2>
+              
+              <p class="docu-span-p">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Quibusdam, excepturi?
+              </p>
+            
+            </div>
+            
+            
+            <div class="container mt-5">
+              <div class="row">
+               
+                <div class="col-md-5 docu-dev-bg">
+                  
                   <div>
-                    <p style="margin-bottom: 0;">
-                      cURL
+                    <img style="margin-bottom: 60px" src="img/group-1069.png" alt="">
+                    <h3 class="docu-h3">
+                      Before you login
+                    </h3>
+                    <p>
+                      Lorem ipsum dolor, sit amet consectetur 
+                      adipisicing elit. Eius a corporis esse consectetur veniam
+                      
+                      temporibus libero amet mollitia
+                      rerum perspiciatis!
                     </p>
+                    <a><button href="#"
+                      class="btn mt-2 docu-button">
+                        NEXT
+                      </button></a>
                   </div>
                 </div>
+                
+                
+                <div class="col-md-6 docu-dev-bg-2">
+                  
+                  <div style="display: flex;justify-content: space-between;align-items: center;margin-bottom: 10px;">
+                  
+                    <button class="docu-button-outline btn mt-2">
+                      POST
+                    </button>
+                  
+                    <div style=" display: flex;">
+  
+                      <p class="docu-bg-p">http://www.numero.com/ashsgsjgfdf</p>
+                      
+                    </div>
+                  
+                    <div>
+                      <p class="docu-bg-pv2">
+                        cURL
+                      </p>
+                    </div>
+                  
+                  </div>
+  
+                  <br>
+                  <img src="img/Rectangle 846.png" alt="">
 
-                <img src="images/Rectangle 846.png" alt="" />
+                </div>
               </div>
             </div>
-          </div>
-          <div style="margin-top: 120px; margin-bottom: 20px">
-            <h2 class="m-2" style="color: #483da9; font-family: 'Patua One'">
-              Make a transfer
-            </h2>
-            <p>
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-              Quibusdam, excepturi?
-            </p>
-          </div>
-          <div class="container mt-5">
-            <div class="row">
-              <div
-                style="background-color: #f9fafc; border-radius: 10px; padding: 20px;"
-                class="col-md-5"
-              >
-                <div>
-                  <img
-                    style="margin-bottom: 60px"
-                    src="images/Group 1069.png"
-                    alt=""
-                  />
-                  <h3
-                    style="
-                      color: #032041;
-                      font-family: 'Patua One';
-                      margin-bottom: 20px;
-                    "
-                  >
-                    Before you login
-                  </h3>
+
+
+
+
+            
+            <div style="margin-top: 120px; margin-bottom: 20px">
+              
+              <h2 class="docu-h2">Make a transfer:</h2>
+              
+              <p class="docu-span-p">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Quibusdam, excepturi?
+              </p>
+            
+            </div>
+
+            <br><br>
+
+
+            <div class="container">
+              
+              <div class="row">
+                
+                <div class="docu-dev-bg-2 col-md-5 mx-3 p-5">
+
+                      <h2 class="docu-h2v">
+                          Before you begin
+                      </h2>
+                      <p>
+                        Lorem ipsum dolor amet  consectetur adipisicing elit. Quos, commodi!
+                      </p>
+                      
+                      <hr style="border: 1px solid #E5E9F2;">
+
+                      <a class="docu-a" href="#">Accept payments</a><br>
+                      
+                      <a class="docu-a" href="#">Accept payments</a>
+                </div>
+
+                <div class="docu-dev-bg-2 col-md-5 mx-3 p-5">
+
+                  <h2 class="docu-h2v">
+                      Before you begin
+                  </h2>
                   <p>
-                    Lorem ipsum dolor, sit amet consectetur <br />
-                    adipisicing elit. Eius a corporis esse consectetur veniam
-                    <br />
-                    temporibus libero amet mollitia <br />
-                    rerum perspiciatis!
+                    Lorem ipsum dolor amet  consectetur adipisicing elit. Quos, commodi!
                   </p>
-                  <a
-                    ><button
-                      href=""
-                      style="
-                        background-color: #6d3cc8;
-                        color: white;
-                        padding: 10px;
-                        width: 100px;
-                        margin-bottom: 10px;
-                        border-radius: 10px;
-                      "
-                      class="btn mt-2"
-                    >
-                      NEXT
-                    </button></a
-                  >
-                </div>
-              </div>
-              <div
-                style="background-color: #ffffff; border-radius: 10px; padding: 20px;"
-                class="col-md-7"
-              >
-                <div style="display: flex;justify-content: space-between;align-items: center;margin-bottom: 10px;">
-                  <button
-                    style="
-                      background-color: #edecf8;
-                      color: #483da9;
-                      border-radius: 10px;
-                      font-family: 'Patua One';
-                    "
-                    class="btn mt-2"
-                  >
-                    Post
-                  </button>
-                  <div style=" display: flex;">
+                  
+                  <hr style="border: 1px solid #E5E9F2;">
 
-                    <p style="margin-bottom: 0; font-family: 'Patua One';">http://www.numero.com/ashsgsjgfdf</p>
-                    
-                  </div>
-                  <div>
-                    <p style="margin-bottom: 0;">
-                      cURL
-                    </p>
-                  </div>
-                </div>
-
-                <img src="images/Rectangle 846.png" alt="" />
-              </div>
+                  <a class="docu-a" href="#">Accept payments</a><br>
+                  
+                  <a class="docu-a" href="#">Accept payments</a>
             </div>
-          </div>
-          <div style="margin-top: 120px; margin-bottom: 60px">
-            <h2 class="m-2" style="color: #483da9; font-family: 'Patua One'">
-              Make a transfer
-            </h2>
-            <p>
-              Lorem ipsum, dolor sit amet  consectetur adipisicing elit.
-              Quibusdam, excepturi?
-            </p>
-          </div>
-          <div class="container">
-            <div class="row">
-              <div style="background-color: #ffffff; border-radius: 10px;"  class="col-md-5 mx-3 p-5">
-                    <h2 style="color: #032041;font-family: 'Patua One';margin-bottom: 20px;">
-                        Before you login
-                    </h2>
-                    <p style="margin-bottom: 20px;">
-                      Lorem ipsum dolor <br> amet  consectetur adipisicing elit. Quos, commodi!
-                    </p>
-                    <hr style="border: 1px solid #E5E9F2;">
-                    <a style="text-decoration: none; color: #6156C2;" href="#">Make a payment</a><br>
-                    <a style="text-decoration: none;color: #6156C2;" href="#">Make a payment</a>
-              </div>
-              <div style="background-color: #ffffff; border-radius: 10px;" class="col-md-5 p-5">
-                <h2 style="color: #032041;font-family: 'Patua One';margin-bottom: 20px;">
-                    Before you login
-                </h2>
-                <p style="margin-bottom: 20px;">
-                  Lorem ipsum dolor <br> amet  consectetur adipisicing elit. Quos, commodi!
-                </p>
-                <hr style="border: 1px solid #E5E9F2;">
-                <a style="text-decoration: none; color: #6156C2;" href="#">Make a payment</a><br>
-                <a style="text-decoration: none;color: #6156C2;" href="#">Make a payment</a>
-          </div>
-            </div>
+               
           </div>
         </div>
       </div>
     </div>
-    <script src="js/jquery-3.4.1.slim.min.js"></script>
-    <script src="js/popper.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-  </body>
+  </div>
+
+
+    <!-- FOOTER SECTION -->
+    <footer class="footer" id="footer">
+        <div class="section-container">
+            <a href=""><img src="img/footer-logo.png" alt="" class="footer-img"></a>
+            <div class="footer-wrapper">
+                <!-- 1 -->
+                <div class="footer-content footer-content-1">
+                    <h4>Numero is a business banking platform that is built for business owners by business owners. We want to power the next generation of companies that will shape the Nigerian industry across all sectors.
+                    </h4>
+                    <div class="footer-social-icon">
+                        <a href=""> <img src="img/tweet.png" alt=""></a>
+                        <a href=""><img src="img/ig.png" alt=""></a>
+                        <a href=""><img src="img/facebook.png" alt=""></a>
+                    </div>
+                </div>
+                <!-- 1 -->
+
+                <!-- 2 -->
+                <div class="footer-content footer-content-2">
+                    <h4>Company</h4>
+                    <li><a href="">
+                        FAQ
+                    </a></li>
+                    <li><a href="">
+                        Pricing
+                    </a></li>
+                    <li><a href="about-us.html">
+                        About Us
+                    </a></li>
+                    <li> <a href="privacy.html">
+                        Privacy policy
+                    </a></li>
+                    <li> <a href="t-c.html">
+                        Terms and Conditions
+                    </a></li>
+                </div>
+                <!-- 2 -->
+
+                <!-- 3 -->
+                <div class="footer-content footer-content-3">
+                    <h4>Product</h4>
+                    <li> <a href="">
+                        How It Works
+                    </a></li>
+                    <li><a href="blog.html">
+                        Blog
+                    </a></li>
+                    <li> <a href="">
+                        Help Center
+                    </a></li>
+                </div>
+                <!-- 3 -->
+
+                <!-- 4 -->
+                <div class="footer-content footer-content-4">
+                    <h3>Newsletter</h3>
+                    <li>Enter your email to get product updates and stories about businesses winning with Numero </li>
+                    <div class="footer-form-wrapper">
+                        <div class="footer-form">
+                            <input type="email" name="" id="" placeholder="">
+                        </div>
+                        <div class="footer-button">
+                            <img src="img/send.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <!-- 4 -->
+            </div>
+            <div class="footer-others">
+                <h4>Numero is a registered trademark of Transroute Technology Limited, a company duly registered under the Laws of the Federal Republic of Nigeria with RC Number: 1594346. Account numbers to all bank accounts opened on our platform are provided
+                    by Providus Bank Plc, a company duly registered under the Laws of the Federal Republic of Nigeria with RC Number: 198892 and duly licensed by the Central Bank of Nigeria.</h4>
+                <div class="footer-others-img">
+                    <a href=""><img src="img/footer-gp.png" class="footer-download" alt=""></a>
+                    <a href=""><img src="img/footer-ap.png" class="footer-download" alt=""></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- FOOTER SECTION -->
+
+    <!-- BOOTSTRAP JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+    <!-- BOOTSTRAP JS -->
+</body>
+
 </html>

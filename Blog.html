@@ -1,633 +1,317 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
-      integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l"
-      crossorigin="anonymous"
-    />
-    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Patua+One&family=Unlock&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/fontawesome.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
-    />
-    <title></title>
-  </head>
-  <style>
-    #grad {
-      background: linear-gradient(
-        180deg,
-        rgba(255, 255, 255, 0) 0%,
-        rgba(165, 134, 234, 0.1) 69.67%,
-        rgba(152, 116, 231, 0.05) 93.45%
-      );
-      text-align: center;
-      padding: 50px;
-    }
-    .input-icons i {
-      position: absolute;
-    }
 
-    .input-icons {
-      width: 100%;
-      margin-bottom: 10px;
-    }
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Numero</title>
+    <!-- FONTS CSS CDN -->
+    <!-- TT COMMONS CDN -->
+    <link href="http://fonts.cdnfonts.com/css/tt-commons" rel="stylesheet">
+    <!-- TT COMMONS CDN -->
+    <!-- FONTS CSS CDN -->
+    <!-- BOOTSTRAP CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <!-- BOOTSTRAP CSS -->
 
-    .icon {
-      padding: 10px;
-      min-width: 40px;
-    }
+    <!-- EXTERNAL CSS -->
+    <link rel="stylesheet" href="blog.css">
+    <!-- EXTERNAL CSS -->
+</head>
 
-    .input-field {
-      width: 100%;
-      padding: 10px;
-      text-align: center;
-    }
-    .vertical {
-      border-left: 3px dotted rgb(255, 255, 255);
-      height: 300px;
-      position: absolute;
-      left: 36%;
-    }
-    .vertical1 {
-      border-left: 3px dotted rgb(255, 255, 255);
-      height: 300px;
-      position: absolute;
-      left: 50%;
-    }
-    .vertical2 {
-      border-left: 3px dotted rgb(255, 255, 255);
-      height: 300px;
-      position: absolute;
-      left: 63%;
-    }
-  </style>
-  <body>
-    <nav style="margin-top: 20px" class="navbar navbar-expand-lg">
-      <img src="images/Group11.png" alt="" />
-      <!-- <a style="color:#2D0050;font-family: 'Patua One', cursive;font-size: 30px;" class="navbar-brand" href="#">NUMERO</a> -->
-      <button
-        class="navbar-toggler"
-        type="button"
-        data-toggle="collapse"
-        data-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
-      >
-        <span class="navbar-toggler-icon"></span>
-      </button>
+<body>
+    <!-- HEADER SECTION -->
+    <header class="header" id="header">
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <div class="header-container">
+                <a class="navbar-brand" href="index.html">
+                    <img src="img/nav-logo.png" alt="" class="navbar-logo">
+                </a>
+                <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#main_nav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="main_nav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item"><a class="nav-link" href="about-us.html">About </a></li>
 
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul
-          style="
-            background-color: rgb(241, 238, 238);
-            padding: 10px;
-            margin-left: 250px;
-            border-radius: 20px;
-          "
-          class="navbar-nav mr-auto"
-        >
-          <li class="nav-item active">
-            <a style="color: black; margin-right: 30px" class="nav-link" href=""
-              >Home<span class="sr-only">(current)</span></a
-            >
-          </li>
-          <li class="nav-item">
-            <a
-              style="color: black; margin-right: 30px"
-              class="nav-link"
-              href="#"
-              >Features</a
-            >
-          </li>
-          <li class="nav-item">
-            <a
-              style="color: black; margin-right: 30px"
-              class="nav-link"
-              href="#"
-              >Pricing</a
-            >
-          </li>
-          <li class="nav-item">
-            <a
-              style="color: black; margin-right: 30px"
-              class="nav-link"
-              href="#"
-              >Faqs</a
-            >
-          </li>
-          <li class="nav-item">
-            <a
-              style="color: black; margin-right: 30px"
-              class="nav-link"
-              href="#"
-              >Blog</a
-            >
-          </li>
-        </ul>
-        <div class="">
-          <img width="100px" src="images/128x128.png" class="mr-2" alt="" />
-          <img width="100px" src="images/apple.png" alt="" />
-        </div>
-      </div>
-    </nav>
+                        <li class="nav-item">
+                            <a class="nav-link" href="features.html"> Features </a></li>
 
-    <div id="grad" class="" style="position: relative; height: 400px">
-      <h2
-        style="
-          font-size: 90px;
-          font-family: 'Patua One', cursive;
-          color: #04004d;
-        "
-      >
-        Blog & Updates
-      </h2>
-      <form
-        action=""
-        style="
-          position: absolute;
-          width: 682px;
+                        <li class=" nav-item "><a class="nav-link " href="pricing.html "> Pricing </a></li>
 
-          left: 379px;
-          top: 90%;
+                        <li class="nav-item "><a class="nav-link " href="faq.html "> Faqs </a></li>
 
-          background: #ffffff;
-          box-shadow: 0px 4px 24px 10px rgba(0, 0, 0, 0.05);
-          border-radius: 20px;
-        "
-      >
-        <input type="text" class="form-control p-4" style="height: 20%" />
-      </form>
-    </div>
-    <div
-      style="margin-top: 120px; background-color: #f9fafc; border-radius: 20px"
-      class="container mb-5"
-    >
-      <div class="row">
-        <div class="col-md-6">
-          <img src="images/Rectangle Copy 89.png" alt="" />
-        </div>
-        <div class="col-md-6 mt-5">
-          <img
-            style="margin-bottom: 30px"
-            width="50px"
-            src="images/Group 1938.png"
-            alt=""
-          />
-          <h2
-            style="
-              color: #04004d;
-              font-family: 'Patua One';
-              margin-bottom: 30px;
-            "
-          >
-            A place for your <br />
-            company’s money
-          </h2>
-          <p style="margin-bottom: 30px">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation .
-          </p>
-          <div style="display: flex">
-            <a
-              style="margin-right: 10px; text-decoration: none; color: #6d3cc8"
-              href="#"
-              >Read More</a
-            >
-            <div>
-              <i
-                style="color: #6d3cc8"
-                class="fa fa-arrow-right"
-                aria-hidden="true"
-              ></i>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="container">
-      <div class="row">
-        <div style="border-radius: 20px" class="col-md-6 mr-4 mb-5">
-          <img class="mb-4" src="images/Rectangle Copy 90.png" alt="" />
-          <img
-            style="margin-bottom: 30px"
-            width="50px"
-            src="images/Group 1938.png"
-            alt=""
-          />
-          <h2
-            style="
-              color: #04004d;
-              font-family: 'Patua One';
-              margin-bottom: 30px;
-            "
-          >
-            A place for your <br />
-            company’s money
-          </h2>
-          <p style="margin-bottom: 30px">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation .
-          </p>
-          <div style="display: flex">
-            <a
-              style="margin-right: 10px; text-decoration: none; color: #6d3cc8"
-              href="#"
-              >Read More</a
-            >
-            <div>
-              <i
-                style="color: #6d3cc8"
-                class="fa fa-arrow-right"
-                aria-hidden="true"
-              ></i>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-5">
-          <img class="mb-4" src="images/Rectangle Copy 90.png" alt="" />
-          <img
-            style="margin-bottom: 30px"
-            width="50px"
-            src="images/Group 1938.png"
-            alt=""
-          />
-          <h2
-            style="
-              color: #04004d;
-              font-family: 'Patua One';
-              margin-bottom: 30px;
-            "
-          >
-            A place for your <br />
-            company’s money
-          </h2>
-          <p style="margin-bottom: 30px">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation .
-          </p>
-          <div style="display: flex">
-            <a
-              style="margin-right: 10px; text-decoration: none; color: #6d3cc8"
-              href="#"
-              >Read More</a
-            >
-            <div>
-              <i
-                style="color: #6d3cc8"
-                class="fa fa-arrow-right"
-                aria-hidden="true"
-              ></i>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="container">
-      <div class="row">
-        <div style="border-radius: 20px" class="col-md-6 mr-4">
-          <img class="mb-4" src="images/Rectangle Copy 90.png" alt="" />
-          <img
-            style="margin-bottom: 30px"
-            width="50px"
-            src="images/Group 1938.png"
-            alt=""
-          />
-          <h2
-            style="
-              color: #04004d;
-              font-family: 'Patua One';
-              margin-bottom: 30px;
-            "
-          >
-            A place for your <br />
-            company’s money
-          </h2>
-          <p style="margin-bottom: 30px">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation .
-          </p>
-          <div style="display: flex">
-            <a
-              style="margin-right: 10px; text-decoration: none; color: #6d3cc8"
-              href="#"
-              >Read More</a
-            >
-            <div>
-              <i
-                style="color: #6d3cc8"
-                class="fa fa-arrow-right"
-                aria-hidden="true"
-              ></i>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-5">
-          <img class="mb-4" src="images/Rectangle Copy 90.png" alt="" />
-          <img
-            style="margin-bottom: 30px"
-            width="50px"
-            src="images/Group 1938.png"
-            alt=""
-          />
-          <h2
-            style="
-              color: #04004d;
-              font-family: 'Patua One';
-              margin-bottom: 30px;
-            "
-          >
-            A place for your <br />
-            company’s money
-          </h2>
-          <p style="margin-bottom: 30px">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation .
-          </p>
-          <div style="display: flex">
-            <a
-              style="margin-right: 10px; text-decoration: none; color: #6d3cc8"
-              href="#"
-              >Read More</a
-            >
-            <div>
-              <i
-                style="color: #6d3cc8"
-                class="fa fa-arrow-right"
-                aria-hidden="true"
-              ></i>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div
-      style="margin-top: 120px; background-color: #f9fafc; border-radius: 20px"
-      class="container mb-5"
-    >
-      <div class="row">
-        <div class="col-md-6">
-          <img src="images/Rectangle Copy 89.png" alt="" />
-        </div>
-        <div class="col-md-6 mt-5">
-          <img
-            style="margin-bottom: 30px"
-            width="50px"
-            src="images/Group 1938.png"
-            alt=""
-          />
-          <h2
-            style="
-              color: #04004d;
-              font-family: 'Patua One';
-              margin-bottom: 30px;
-            "
-          >
-            A place for your <br />
-            company’s money
-          </h2>
-          <p style="margin-bottom: 30px">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation .
-          </p>
-          <div style="display: flex">
-            <a
-              style="margin-right: 10px; text-decoration: none; color: #6d3cc8"
-              href="#"
-              >Read More</a
-            >
-            <div>
-              <i
-                style="color: #6d3cc8"
-                class="fa fa-arrow-right"
-                aria-hidden="true"
-              ></i>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="container">
-      <div class="row">
-        <div style="border-radius: 20px" class="col-md-6 mr-4">
-          <img class="mb-4" src="images/Rectangle Copy 90.png" alt="" />
-          <img
-            style="margin-bottom: 30px"
-            width="50px"
-            src="images/Group 1938.png"
-            alt=""
-          />
-          <h2
-            style="
-              color: #04004d;
-              font-family: 'Patua One';
-              margin-bottom: 30px;
-            "
-          >
-            A place for your <br />
-            company’s money
-          </h2>
-          <p style="margin-bottom: 30px">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation .
-          </p>
-          <div style="display: flex">
-            <a
-              style="margin-right: 10px; text-decoration: none; color: #6d3cc8"
-              href="#"
-              >Read More</a
-            >
-            <div>
-              <i
-                style="color: #6d3cc8"
-                class="fa fa-arrow-right"
-                aria-hidden="true"
-              ></i>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-5">
-          <img class="mb-4" src="images/Rectangle Copy 90.png" alt="" />
-          <img
-            style="margin-bottom: 30px"
-            width="50px"
-            src="images/Group 1938.png"
-            alt=""
-          />
-          <h2
-            style="
-              color: #04004d;
-              font-family: 'Patua One';
-              margin-bottom: 30px;
-            "
-          >
-            A place for your <br />
-            company’s money
-          </h2>
-          <p style="margin-bottom: 30px">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation .
-          </p>
-          <div style="display: flex">
-            <a
-              style="margin-right: 10px; text-decoration: none; color: #6d3cc8"
-              href="#"
-              >Read More</a
-            >
-            <div>
-              <i
-                style="color: #6d3cc8"
-                class="fa fa-arrow-right"
-                aria-hidden="true"
-              ></i>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="container-fluid" style="margin-top: 50px">
-      <section class="">
-        <!-- Footer -->
-        <footer style="background-color: rgb(2, 2, 83)" class="text-white">
-          <!-- Grid container -->
-          <div class="container p-4">
-            <!--Grid row-->
-            <div class="row">
-              <!--Grid column-->
-              <div class="col-lg-4 col-md-12 mb-4 mb-md-0">
-                <h1
-                  class="text-uppercase"
-                  style="font-family: 'Grenze Gotisch', cursive; color: white"
-                >
-                  NUMERO
-                </h1>
+                        <li class="nav-item "><a class="nav-link " href="blog.html "> Blog </a></li>
 
-                <p>
-                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste
-                  atque ea quis molestias. Fugiat pariatur maxime quis culpa
-                  corporis vitae repudiandae aliquam voluptatem veniam, est
-                  atque cumque eum delectus sint!
-                </p>
-              </div>
-              <!--Grid column-->
-              <div class="vertical"></div>
-              <!--Grid column-->
-              <div
-                class="col-lg-2 col-md-6 mb-4 mb-md-0"
-                style="margin-top: 60px"
-              >
-                <h5 class="text-uppercase">Company</h5>
+                        <li class="nav-item nav-item-app ">
+                            <a class="nav-link " href="blog.html "> <img src="img/gp.png " alt=" " class="navbar-download "> </a>
+                        </li>
 
-                <ul
-                  class="list-unstyled mb-0"
-                  style="margin-top: 10px; line-height: 40px"
-                >
-                  <li>
-                    <a href="#!" class="text-white">FAQ</a>
-                  </li>
-                  <li>
-                    <a href="#!" class="text-white">Pricing</a>
-                  </li>
-                  <li>
-                    <a href="#!" class="text-white">About Us</a>
-                  </li>
-                  <li>
-                    <a href="#!" class="text-white">Privacy policy</a>
-                  </li>
-                  <li>
-                    <a href="#!" class="text-white">Terms and Conditions</a>
-                  </li>
-                </ul>
-              </div>
-              <!--Grid column-->
-              <div class="vertical1"></div>
-              <!--Grid column-->
-              <div
-                class="col-lg-2 col-md-6 mb-4 mb-md-0"
-                style="margin-top: 60px; line-height: 40px"
-              >
-                <h5 class="text-uppercase mb-0">Product</h5>
+                        <li class="nav-item nav-item-app ">
+                            <a class="nav-link " href="blog.html "> <img src="img/as.png " alt=" " class="navbar-download "> </a>
+                        </li>
 
-                <ul class="list-unstyled" style="margin-top: 10px">
-                  <li>
-                    <a href="#!" class="text-white">How it Works</a>
-                  </li>
-                  <li>
-                    <a href="#!" class="text-white">Blog</a>
-                  </li>
-                  <li>
-                    <a href="#!" class="text-white">Help Center</a>
-                  </li>
-                </ul>
-              </div>
-              <!--Grid column-->
-              <div class="vertical2"></div>
-              <div
-                class="col-lg-3 col-md-6 mb-4 mb-md-0"
-                style="margin-top: 60px"
-              >
-                <h5>Newsletter</h5>
-                <p>
-                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                  Quaerat, fugit?
-                </p>
-                <div style="display: flex">
-                  <form action="" class="form-group">
-                    <input type="text" class="form-control" />
-                  </form>
-                  <div class="ml-3">
-                    <i class="fa fa-paper-plane"></i>
-                  </div>
+                    </ul>
                 </div>
-              </div>
-              <!--Grid column-->
+                <div class="navbar-app-wrapper2 ">
+                    <a class="navbar-app " href="index.html ">
+                        <img src="img/gp.png " alt=" " class="navbar-logo ">
+                    </a>
+                    <a class="navbar-app " href="index.html ">
+                        <img src="img/as.png " alt=" " class="navbar-logo ">
+                    </a>
+                </div>
             </div>
-            <hr style="background-color: white" />
-            <div class="row">
-              <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
-                <p>
-                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste
-                  atque ea quis molestias. Fugiat pariatur maxime quis culpa
-                  corporis vitae repudiandae aliquam voluptatem veniam, est
-                  atque cumque eum delectus sint!
-                </p>
-              </div>
 
-              <div style="margin-left: 17%">
-                <img src="./images/128x128.png" class="mr-3" alt="" />
-                <img src="./images/128x128.png" class="mr-3" alt="" />
-              </div>
+        </nav>
+    </header>
+    <!-- HEADER SECTION -->
+
+    <!-- HERO SECTION -->
+    <section class="hero" id="hero">
+        <div class="section-container">
+            <div class="hero-text">
+                <h1>Blog & Updates
+                </h1>
+                <div class="wrapper">
+                    <div class="search_box">
+
+                        <div class="search_field">
+                            <img src="img/search.svg" alt="">
+                            <input type="text" class="input" placeholder="Type search">
+                        </div>
+
+                        <div class="dropdown">
+                            <div class="default_option">Articles <span><img src="img/drop.png" alt=""> </span> </div>
+                            <ul>
+                                <li>Articles</li>
+                                <li>Memos</li>
+                                <li>News</li>
+                                <li>News</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <!--Grid column-->
-          </div>
-        </footer>
-      </section>
-    </div>
+        </div>
+    </section>
+    <!-- HERO SECTION -->
 
-    <script src="js/jquery-3.4.1.slim.min.js"></script>
-    <script src="js/popper.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-  </body>
+    <!-- BLOG SECTION -->
+    <section class="blog" id="blog">
+        <div class="section-container">
+            <!-- 1 -->
+            <div class="blog-wrapper">
+                <!-- 1 -->
+                <div class="blog-content">
+                    <img src="img/Rectangle Copy 89.png" alt="">
+                    <div class="blog-text">
+                        <div class="blog-title"><span><img src="img/Group 1959.png" alt=""> </span>#Finance </div>
+                        <h4>A place for your company’s money</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation .</p>
+                        <a href="inner-blog.html" class="read-more-btn">Read more <span> <img src="img/Mask.png" alt=""> </span></a>
+                    </div>
+                </div>
+                <!-- 1 -->
+            </div>
+            <!-- 1 -->
+
+            <!-- 2 -->
+            <div class="blog-wrapper-2">
+                <!-- 1 -->
+                <div class="blog-content-2">
+                    <img src="img/Rectangle Copy 90.png" alt="">
+                    <div class="blog-text-2">
+                        <div class="blog-title"><span><img src="img/Group 1959.png" alt=""> </span>#Finance </div>
+                        <h4>A place for your company’s money</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        <a href="inner-blog.html" class="read-more-btn">Read more <span> <img src="img/Mask.png" alt=""> </span></a>
+                    </div>
+                </div>
+                <!-- 1 -->
+
+                <!-- 2 -->
+                <div class="blog-content-2">
+                    <img src="img/Rectangle Copy 91.png" alt="">
+                    <div class="blog-text-2">
+                        <div class="blog-title"><span><img src="img/Group 1959.png" alt=""> </span>#Finance </div>
+                        <h4>A place for your company’s money</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        <a href="inner-blog.html" class="read-more-btn">Read more <span> <img src="img/Mask.png" alt=""> </span></a>
+                    </div>
+                </div>
+                <!-- 2 -->
+            </div>
+            <!-- 2 -->
+
+            <!-- 3 -->
+            <div class="blog-wrapper-2">
+                <!-- 1 -->
+                <div class="blog-content-2">
+                    <img src="img/Rectangle Copy 90.png" alt="">
+                    <div class="blog-text-2">
+                        <div class="blog-title"><span><img src="img/Group 1959.png" alt=""> </span>#Finance </div>
+                        <h4>A place for your company’s money</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        <a href="inner-blog.html" class="read-more-btn">Read more <span> <img src="img/Mask.png" alt=""> </span></a>
+                    </div>
+                </div>
+                <!-- 1 -->
+
+                <!-- 2 -->
+                <div class="blog-content-2">
+                    <img src="img/Rectangle Copy 91.png" alt="">
+                    <div class="blog-text-2">
+                        <div class="blog-title"><span><img src="img/Group 1959.png" alt=""> </span>#Finance </div>
+                        <h4>A place for your company’s money</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        <a href="" class="read-more-btn">Read more <span> <img src="img/Mask.png" alt=""> </span></a>
+                    </div>
+                </div>
+                <!-- 2 -->
+            </div>
+            <!-- 3 -->
+
+            <!-- 4 -->
+            <div class="blog-wrapper">
+                <!-- 1 -->
+                <div class="blog-content">
+                    <img src="img/Rectangle Copy 89.png" alt="">
+                    <div class="blog-text">
+                        <div class="blog-title"><span><img src="img/Group 1959.png" alt=""> </span>#Finance </div>
+                        <h4>A place for your company’s money</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation .</p>
+                        <a href="inner-blog.html" class="read-more-btn">Read more <span> <img src="img/Mask.png" alt=""> </span></a>
+                    </div>
+                </div>
+                <!-- 1 -->
+            </div>
+            <!-- 4 -->
+
+            <!-- 5 -->
+            <div class="blog-wrapper-2">
+                <!-- 1 -->
+                <div class="blog-content-2">
+                    <img src="img/Rectangle Copy 90.png" alt="">
+                    <div class="blog-text-2">
+                        <div class="blog-title"><span><img src="img/Group 1959.png" alt=""> </span>#Finance </div>
+                        <h4>A place for your company’s money</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        <a href="inner-blog.html" class="read-more-btn">Read more <span> <img src="img/Mask.png" alt=""> </span></a>
+                    </div>
+                </div>
+                <!-- 1 -->
+
+                <!-- 2 -->
+                <div class="blog-content-2">
+                    <img src="img/Rectangle Copy 91.png" alt="">
+                    <div class="blog-text-2">
+                        <div class="blog-title"><span><img src="img/Group 1959.png" alt=""> </span>#Finance </div>
+                        <h4>A place for your company’s money</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        <a href="" class="read-more-btn">Read more <span> <img src="img/Mask.png" alt=""> </span></a>
+                    </div>
+                </div>
+                <!-- 2 -->
+            </div>
+            <!-- 5 -->
+        </div>
+    </section>
+    <!-- BLOG SECTION -->
+
+    <!-- MORE POST SECTION -->
+    <section class="more" id="more">
+        <div class="section-container">
+            <button class="more-btn">More Posts</button>
+        </div>
+    </section>
+    <!-- MORE POST SECTION -->
+
+    <!-- FOOTER SECTION -->
+    <footer class="footer" id="footer">
+        <div class="section-container">
+            <a href=""><img src="img/footer-logo.png" alt="" class="footer-img"></a>
+            <div class="footer-wrapper">
+                <!-- 1 -->
+                <div class="footer-content footer-content-1">
+                    <h4>Numero is a business banking platform that is built for business owners by business owners. We want to power the next generation of companies that will shape the Nigerian industry across all sectors.
+                    </h4>
+                    <div class="footer-social-icon">
+                        <a href=""> <img src="img/tweet.png" alt=""></a>
+                        <a href=""><img src="img/ig.png" alt=""></a>
+                        <a href=""><img src="img/facebook.png" alt=""></a>
+                    </div>
+                </div>
+                <!-- 1 -->
+
+                <!-- 2 -->
+                <div class="footer-content footer-content-2">
+                    <h4>Company</h4>
+                    <li><a href="">
+                        FAQ
+                    </a></li>
+                    <li><a href="">
+                        Pricing
+                    </a></li>
+                    <li><a href="about-us.html">
+                        About Us
+                    </a></li>
+                    <li> <a href="privacy.html">
+                        Privacy policy
+                    </a></li>
+                    <li> <a href="t-c.html">
+                        Terms and Conditions
+                    </a></li>
+                </div>
+                <!-- 2 -->
+
+                <!-- 3 -->
+                <div class="footer-content footer-content-3">
+                    <h4>Product</h4>
+                    <li> <a href="">
+                        How It Works
+                    </a></li>
+                    <li><a href="blog.html">
+                        Blog
+                    </a></li>
+                    <li> <a href="">
+                        Help Center
+                    </a></li>
+                </div>
+                <!-- 3 -->
+
+                <!-- 4 -->
+                <div class="footer-content footer-content-4">
+                    <h3>Newsletter</h3>
+                    <li>Enter your email to get product updates and stories about businesses winning with Numero </li>
+                    <div class="footer-form-wrapper">
+                        <div class="footer-form">
+                            <input type="email" name="" id="" placeholder="">
+                        </div>
+                        <div class="footer-button">
+                            <img src="img/send.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <!-- 4 -->
+            </div>
+            <div class="footer-others">
+                <h4>Numero is a registered trademark of Transroute Technology Limited, a company duly registered under the Laws of the Federal Republic of Nigeria with RC Number: 1594346. Account numbers to all bank accounts opened on our platform are provided
+                    by Providus Bank Plc, a company duly registered under the Laws of the Federal Republic of Nigeria with RC Number: 198892 and duly licensed by the Central Bank of Nigeria.</h4>
+                <div class="footer-others-img">
+                    <a href=""><img src="img/footer-gp.png" class="footer-download" alt=""></a>
+                    <a href=""><img src="img/footer-ap.png" class="footer-download" alt=""></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- FOOTER SECTION -->
+
+    <!-- BOOTSTRAP JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+    <!-- BOOTSTRAP JS -->
+</body>
+
 </html>
