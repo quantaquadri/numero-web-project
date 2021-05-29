@@ -22,208 +22,11 @@
   <link href="http://fonts.cdnfonts.com/css/tt-commons" rel="stylesheet">
   <!-- TT COMMONS CDN CSS -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+  <link rel="stylesheet" href="css/Fresh.css">
   <title></title>
 </head>
 <style>
-  a,
-  a:hover {
-    text-decoration: none;
-    color: transparent;
-  }
-
-  #grad {
-    background: linear-gradient(180deg,
-        rgba(255, 255, 255, 0) 0%,
-        rgba(165, 134, 234, 0.1) 69.67%,
-        rgba(152, 116, 231, 0.05) 93.45%);
-    text-align: center;
-    padding: 100px 0 50px;
-  }
-
-  .numero-container {
-    width: 80%;
-    margin: 0 auto;
-  }
-
-  .hero-text>h1 {
-    font-size: 72px;
-    font-family: 'TT Commons', sans-serif;
-    font-weight: 600;
-    color: #04004d;
-  }
-
-  @media all and (max-width:768px) {
-    #grad {
-      padding: 100px 0 50px;
-    }
-
-    .numero-container {
-      width: 95%;
-      margin: 0 auto;
-    }
-
-    .hero-text>h1 {
-      font-size: 50px;
-    }
-  }
-
-  /* HEADER SECTION */
-  .header {
-    font-family: 'Montserrat',
-      sans-serif;
-    position: absolute;
-    margin: 0 auto;
-    width: 100%;
-  }
-
-  .header-container {
-    display: flex;
-    flex-wrap: inherit;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0 50px;
-    width: 100%;
-  }
-
-  .navbar {
-    padding-left: 0;
-    padding-right: 0;
-  }
-
-  .navbar-logo {
-    max-width: 100%;
-    height: 25px;
-  }
-
-  .navbar-dark .navbar-nav .nav-link {
-    font-family: 'TT Commons', sans-serif;
-    font-size: 17px;
-    color: #000;
-    letter-spacing: 0.3px;
-  }
-
-  .navbar-dark .navbar-nav .nav-link:active,
-  .navbar-dark .navbar-nav .nav-link:focus {
-    color: #000;
-  }
-
-  .navbar-dark .navbar-nav .nav-link:hover {
-    color: #000;
-  }
-
-  .navbar-expand-lg .navbar-nav {
-    align-items: center;
-    background: #FBF7FD;
-    margin: 0 auto;
-    padding: 10px;
-    border-radius: 20px;
-  }
-
-  .navbar-expand-lg .navbar-collapse {
-    justify-content: flex-end;
-  }
-
-  @media all and (max-width: 991px) {
-    .navbar-brand {
-      padding-left: 10px;
-    }
-
-    .navbar-expand-lg .navbar-nav {
-      align-items: flex-start;
-      background-color: transparent;
-      padding: 10px 0;
-      border-radius: 0;
-    }
-
-    .header-container {
-      max-width: 80rem;
-      padding: 0;
-    }
-
-    .navbar-expand-lg .navbar-collapse {
-      background-color: #fff;
-      padding: 10px;
-    }
-
-    /* NAVBAR TOGGLE BUTTON */
-    .navbar-toggler {
-      background: none;
-      border: none;
-    }
-
-    .navbar-toggler:active,
-    .navbar-toggler:focus {
-      outline: 0;
-    }
-
-    .navbar-dark .navbar-toggler {
-      color: transparent;
-      border-color: transparent;
-    }
-
-    .navbar-toggler .icon-bar {
-      display: block;
-      width: 22px;
-      height: 2px;
-      border-radius: 1px;
-      margin: 4px 0 4px 0;
-      transition: all 0.2s;
-    }
-
-    .navbar-dark .navbar-toggler .icon-bar {
-      background: #03303B;
-    }
-
-    .navbar-toggler .icon-bar:nth-of-type(1) {
-      transform: rotate(45deg);
-      transform-origin: 10% 10%;
-    }
-
-    .navbar-toggler .icon-bar:nth-of-type(2) {
-      opacity: 0;
-      filter: alpha(opacity=0);
-    }
-
-    .navbar-toggler .icon-bar:nth-of-type(3) {
-      transform: rotate(-45deg);
-      transform-origin: 10% 90%;
-    }
-
-    .navbar-toggler.collapsed .icon-bar:nth-of-type(1) {
-      transform: rotate(0);
-    }
-
-    .navbar-toggler.collapsed .icon-bar:nth-of-type(2) {
-      opacity: 1;
-      filter: alpha(opacity=100);
-    }
-
-    .navbar-toggler.collapsed .icon-bar:nth-of-type(3) {
-      transform: rotate(0);
-    }
-
-    /* NAVBAR TOGGLE BUTTON */
-  }
-
-  /* ============ desktop view ============ */
-  @media all and (min-width: 992px) {
-    .navbar .nav-item .dropdown-menu {
-      display: none;
-    }
-
-    .navbar .nav-item:hover .nav-link {}
-
-    .navbar .nav-item:hover .dropdown-menu {
-      display: block;
-    }
-
-    .navbar .nav-item .dropdown-menu {
-      margin-top: 0;
-    }
-  }
-
-  /* ============ desktop view .end// ============ */
-  /* HEADER SECTION */
+ 
 </style>
 
 <body>
@@ -269,25 +72,14 @@
   </header>
   <!-- HEADER SECTION -->
 
-    <div id="grad">
-            <div class="numero-container">
-            <div class="hero-text">
+    <div id="grad1">
+            <div>
+            <div class="hero-text2">
                 <h1>
                     FAQS
                 </h1>
-                <p style="
-                font-family: 'TT Commons', sans-serif;
-                font-size: 20px;
-                font-style: normal;
-                font-weight: 400;
-                line-height: 32px;
-                letter-spacing: 0px;
-                text-align: center;
-                width: 550px;
-                max-width: 100%;
-                margin: 0 auto 40px;
-                color: #000;
-                ">
+                <p class="text"
+               >
                 This platform makes it possible for employers and colleagues to report
                 misconduct of any domestic staff
                 </p>
@@ -299,72 +91,72 @@
             <div style="background-color: #FBF7FD;" class="accordion-item mt-5 mb-5 active">
               <h2 class="accordion-header" id="headingOne">
                 <button style="background-color: #FBF7FD;border: 1px solid #6D3CC8;" class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                 <p style="font-family: 'Patua One';">Do we have hidden charges?</p> 
+                 <p class="newtext">Do we have hidden charges?</p> 
                 </button>
               </h2>
               <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
                 <div class="accordion-body">
-                  <strong>This is the first item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                  <strong class="text">This is the first item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
                 </div>
               </div>
             </div>
             <div class="accordion-item mb-5">
               <h2 class="accordion-header" id="headingTwo">
                 <button  class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                    <p style="font-family: 'Patua One';">What if i dont use the service after subscription?</p> 
+                    <p class="newtext">What if i dont use the service after subscription?</p> 
                 </button>
               </h2>
               <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
                 <div class="accordion-body">
-                  <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                  <strong class="text">This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
                 </div>
               </div>
             </div>
             <div  class="accordion-item mb-5">
               <h2 class="accordion-header" id="headingThree">
                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                  <p style="font-family: 'Patua One';">Can i get a refund after subscription?</p> 
+                  <p class="newtext">Can i get a refund after subscription?</p> 
                 </button>
               </h2>
               <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
                 <div class="accordion-body">
-                  <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                  <strong class="text">This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
                 </div>
               </div>
             </div>
             <div  class="accordion-item mb-5">
               <h2 class="accordion-header" id="headingFour">
                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseThree">
-                  <p style="font-family: 'Patua One';">Do we have hidden charges?</p> 
+                  <p class="newtext">Do we have hidden charges?</p> 
                 </button>
               </h2>
               <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
                 <div class="accordion-body">
-                  <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                  <strong class="text">This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
                 </div>
               </div>
             </div>
             <div  class="accordion-item mb-5">
               <h2 class="accordion-header" id="headingFive">
                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
-                  <p style="font-family: 'Patua One';">What plan is best for me?</p> 
+                  <p class="newtext">What plan is best for me?</p> 
                 </button>
               </h2>
               <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#accordionExample">
                 <div class="accordion-body">
-                  <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                  <strong class="text">This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
                 </div>
               </div>
             </div>
             <div  class="accordion-item">
               <h2 class="accordion-header" id="headingSix">
                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
-                  <p style="font-family: 'Patua One';">How does Patricia Business plans help my Business?</p> 
+                  <p class="newtext">How does Patricia Business plans help my Business?</p> 
                 </button>
               </h2>
               <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix" data-bs-parent="#accordionExample">
                 <div class="accordion-body">
-                  <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                  <strong class="text">This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
                 </div>
               </div>
             </div>

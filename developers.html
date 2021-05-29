@@ -24,184 +24,140 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
     />
+    <link rel="stylesheet" href="css/Fresh.css">
     <title></title>
   </head>
   <style>
-    #grad {
-      background: linear-gradient(
-        180deg,
-        rgba(255, 255, 255, 0) 0%,
-        rgba(165, 134, 234, 0.1) 69.67%,
-        rgba(152, 116, 231, 0.05) 93.45%
-      );
-      text-align: center;
-      padding: 50px;
-    }
-
-    .documentation li .active {
+   
+    .feature-text1:hover {
       border-radius: 10px;
       border: 1px solid #6d3cc8;
       box-shadow: 0px 4px 24px 10px rgba(0, 0, 0, 0.05);
-      padding: 10px 30px;
-      background-color: #f5f2fd;
+      padding:  12px;
+      color: #04004d;
+      display: flex;
+      background-color: #F5F2FD;
+    
     }
+  
+  
   </style>
   <body>
-    <nav style="margin-top: 20px" class="navbar navbar-expand-lg">
-      <img src="images/Group11.png" alt="" />
-      <!-- <a style="color:#2D0050;font-family: 'Patua One', cursive;font-size: 30px;" class="navbar-brand" href="#">NUMERO</a> -->
-      <button
-        class="navbar-toggler"
-        type="button"
-        data-toggle="collapse"
-        data-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
-      >
-        <span class="navbar-toggler-icon"></span>
-      </button>
+    <header class="header" id="header">
+      <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="header-container">
+          <a class="navbar-brand" href="index.html">
+            <img src="images/Frame.png" alt="" class="navbar-logo">
+          </a>
+          <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#main_nav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="main_nav">
+            <ul class="navbar-nav">
+              <li class="nav-item"><a class="nav-link" href="business.html">About</a></li>
+  
+              <li class="nav-item"><a class="nav-link" href="shopper.html"> Features </a></li>
+  
+              <li class="nav-item"><a class="nav-link" href="shopper.html"> Pricing </a></li>
+  
+              <li class="nav-item"><a class="nav-link" href="shopper.html"> Faqs </a></li>
+  
+              <li class="nav-item"><a class="nav-link" href="shopper.html"> Blog </a></li>
+            </ul>
+  
+            <div class="navbar-button">
+              <a href="">
+                <img src="images/ggplay.png" alt="" class="navbar-btn" style="margin-right: 20px;">
+              </a>
+  
+              <a href="">
+                <img src="images/appstore.png" alt="" class="navbar-btn">
+              </a>
+            </div>
+          </div> <!-- navbar-collapse.// -->
+        </div> <!-- container-fluid.// -->
+      </nav>
+    </header>
 
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul
-          style="
-            background-color: rgb(241, 238, 238);
-            padding: 10px;
-            margin-left: 250px;
-            border-radius: 20px;
-          "
-          class="navbar-nav mr-auto"
-        >
-          <li class="nav-item active">
-            <a style="color: black; margin-right: 30px" class="nav-link" href=""
-              >Home<span class="sr-only">(current)</span></a
-            >
-          </li>
-          <li class="nav-item">
-            <a
-              style="color: black; margin-right: 30px"
-              class="nav-link"
-              href="#"
-              >Features</a
-            >
-          </li>
-          <li class="nav-item">
-            <a
-              style="color: black; margin-right: 30px"
-              class="nav-link"
-              href="#"
-              >Pricing</a
-            >
-          </li>
-          <li class="nav-item">
-            <a
-              style="color: black; margin-right: 30px"
-              class="nav-link"
-              href="#"
-              >Faqs</a
-            >
-          </li>
-          <li class="nav-item">
-            <a
-              style="color: black; margin-right: 30px"
-              class="nav-link"
-              href="#"
-              >Blog</a
-            >
-          </li>
-        </ul>
-        <div class="">
-          <img width="100px" src="images/128x128.png" class="mr-2" alt="" />
-          <img width="100px" src="images/apple.png" alt="" />
-        </div>
-      </div>
-    </nav>
-
-    <div id="grad">
-      <h2
-        style="
-          font-size: 50px;
-          font-family: 'Patua One', cursive;
-          color: #04004d;
-        "
+    <div  class="hero-text2" id="grad1">
+      <h1
+     
       >
         Developers & Documentations
-      </h2>
-      <p
-        style="
-          font-family: sans-serif;
-          font-style: normal;
-          font-weight: normal;
-          margin-bottom: 30px;
-        "
+      </h1>
+      <h4
+       class="text"
       >
         Build meaningful products with our API's, For Developers by developers
-      </p>
+    </h4>
     </div>
-    <div  class="container mt-5 documentation">
+    <div  class="container mt-5">
       <div class="row">
         <div class="col-md-3">
           <ul class="list-unstyled">
-            <li class="p-4">
-              <a style="text-decoration: none" href="#" class="active">
+            <li class="p-5">
+              <a style="text-decoration: none" href="#" class="feature-text1">
                 <img src="images/Dashboard.png" alt="" />
-                <span style="color: #04004d; font-family: 'Patua One'"
+                <span class=""
                   >Home</span
                 >
               </a>
             </li>
             <li class="p-5">
-              <a style="text-decoration: none" href="#" class="">
+              <a style="text-decoration: none" href="#" class="feature-text1">
                 <img src="images/Dashboard.png" alt="" />
-                <span style="color: #04004d; font-family: 'Patua One'"
+                <span 
                   >Transaction</span
                 >
               </a>
             </li>
             <li class="p-5">
-              <a style="text-decoration: none" href="#" class=" ">
+              <a style="text-decoration: none" href="#" class="feature-text1 ">
                 <img src="images/Dashboard.png" alt="" />
-                <span style="color: #04004d; font-family: 'Patua One'"
+                <span 
                   >Wallet</span
                 >
               </a>
             </li>
             <li class="p-5">
-              <a style="text-decoration: none" href="#" class=" ">
+              <a style="text-decoration: none" href="#" class="feature-text1 ">
                 <img src="images/Dashboard.png" alt="" />
-                <span style="color: #04004d; font-family: 'Patua One'"
+                <span
                   >Transfers</span
                 >
               </a>
             </li>
             <li class="p-5">
-              <a style="text-decoration: none" href="#" class=" ">
+              <a style="text-decoration: none" href="#" class="feature-text1 ">
                 <img src="images/Dashboard.png" alt="" />
-                <span style="color: #04004d; font-family: 'Patua One'"
+                <span
                   >Invoice</span
                 >
               </a>
             </li>
             <li class="p-5">
-              <a style="text-decoration: none" href="#" class=" ">
+              <a style="text-decoration: none" href="#" class="feature-text1 ">
                 <img src="images/Dashboard.png" alt="" />
-                <span style="color: #04004d; font-family: 'Patua One'"
+                <span 
                   >Issuing</span
                 >
               </a>
             </li>
             <li class="p-5">
-              <a style="text-decoration: none" href="#" class=" ">
+              <a style="text-decoration: none" href="#" class="feature-text1 ">
                 <img src="images/Dashboard.png" alt="" />
-                <span style="color: #04004d; font-family: 'Patua One'"
+                <span 
                   >Settings</span
                 >
               </a>
             </li>
             <li class="p-5">
-              <a style="text-decoration: none" href="#" class=" ">
+              <a style="text-decoration: none" href="#" class="feature-text1 ">
                 <img src="images/Dashboard.png" alt="" />
-                <span style="color: #04004d; font-family: 'Patua One'"
+                <span 
                   >My Business</span
                 >
               </a>
@@ -215,37 +171,34 @@
               width: 600px;
               background: #ffffff;
               box-shadow: 0px 4px 24px 10px rgba(0, 0, 0, 0.05);
+              border-radius: 40px;
             "
           >
             <input
               type="text"
               class="form-control p-4"
               style="height: 10%; border-radius: 10px; margin-bottom: 100px"
+              placeholder="Type Search"
             />
           </form>
           <h2
-            style="
-              font-family: 'Patua One';
-              color: #04004d;
-              margin-bottom: 30px;
-            "
+          class="heading"
           >
             A place for your <br />
             company’s money
           </h2>
-          <p class="mb-5">
+          <p class=" text mb-5">
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio
             blanditiis illum doloribus rerum quasi, nemo animi inventore.
             Dolore, provident architecto!
           </p>
 
-          <h2 style="font-family: 'Patua One'; color: #04004d">QUICK START</h2>
+          <h2 class="heading mb-5">QUICK START</h2>
 
           <div class="mb-5">
             <div class="row">
               <div
-                style="background-color: #fbf7fd"
-                class="col-md-5 mx-3 shadow card"
+                class="col-md-5 mx-3 boxnew shadow cards"
               >
                 <div class="p-2">
                   <div class="row mb-3">
@@ -267,7 +220,7 @@
                   </div>
                 </div>
               </div>
-              <div class="col-md-5 mx-3 shadow card">
+              <div class="col-md-5 boxnew mx-3 shadow cards">
                 <div class="p-2">
                   <div class="row mb-3">
                     <div class="col-md-6">
@@ -290,7 +243,7 @@
           </div>
           <div class="">
             <div class="row">
-              <div class="col-md-5 mx-3 shadow card">
+              <div class="col-md-5 boxnew mx-3 shadow cards">
                 <div class="p-2">
                   <div class="row mb-3">
                     <div class="col-md-6">
@@ -309,7 +262,7 @@
                   </div>
                 </div>
               </div>
-              <div class="col-md-5 mx-3 shadow card">
+              <div class="col-md-5 mx-3 boxnew shadow cards">
                 <div class="p-2">
                   <div class="row mb-3">
                     <div class="col-md-6">
@@ -318,23 +271,25 @@
                     <div class="col-md-6">
                       <span class="float-right mt-2">🟣</span>
                     </div>
-                    <h5 class="mt-2">Developer/Freelancer</h5>
-                    <p>
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                      Nostrum, necessitatibus quod? Fugiat nobis accusantium
-                      asperiores libero debitis alias odit labore.
-                    </p>
+                    <div class="px-3 mt-4">
+                      <h5 class="mt-2">Developer/Freelancer</h5>
+                      <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Nostrum.
+                      </p>
+
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
 
-          <div style="margin-top: 120px; margin-bottom: 20px">
-            <h2 class="m-2" style="color: #483da9; font-family: 'Patua One'">
+          <div style="margin-top: 120px;">
+            <h2 class="heading mb-3">
               Accept a payment
             </h2>
-            <p>
+            <p class="text">
               Lorem ipsum, dolor sit amet consectetur adipisicing elit.
               Quibusdam, excepturi?
             </p>
@@ -352,15 +307,11 @@
                     alt=""
                   />
                   <h3
-                    style="
-                      color: #032041;
-                      font-family: 'Patua One';
-                      margin-bottom: 20px;
-                    "
+                    class="heading"
                   >
                     Before you login
                   </h3>
-                  <p>
+                  <p class="text">
                     Lorem ipsum dolor, sit amet consectetur <br />
                     adipisicing elit. Eius a corporis esse consectetur veniam
                     <br />
@@ -370,15 +321,7 @@
                   <a
                     ><button
                       href=""
-                      style="
-                        background-color: #6d3cc8;
-                        color: white;
-                        padding: 10px;
-                        width: 100px;
-                        margin-bottom: 10px;
-                        border-radius: 10px;
-                      "
-                      class="btn mt-2"
+                      class="freshbtn btn mt-2"
                     >
                       NEXT
                     </button></a
@@ -418,10 +361,10 @@
             </div>
           </div>
           <div style="margin-top: 120px; margin-bottom: 20px">
-            <h2 class="m-2" style="color: #483da9; font-family: 'Patua One'">
+            <h2 class="heading">
               Make a transfer
             </h2>
-            <p>
+            <p class="text">
               Lorem ipsum, dolor sit amet consectetur adipisicing elit.
               Quibusdam, excepturi?
             </p>
@@ -439,15 +382,11 @@
                     alt=""
                   />
                   <h3
-                    style="
-                      color: #032041;
-                      font-family: 'Patua One';
-                      margin-bottom: 20px;
-                    "
+                     class="heading"
                   >
                     Before you login
                   </h3>
-                  <p>
+                  <p class="text">
                     Lorem ipsum dolor, sit amet consectetur <br />
                     adipisicing elit. Eius a corporis esse consectetur veniam
                     <br />
@@ -457,15 +396,8 @@
                   <a
                     ><button
                       href=""
-                      style="
-                        background-color: #6d3cc8;
-                        color: white;
-                        padding: 10px;
-                        width: 100px;
-                        margin-bottom: 10px;
-                        border-radius: 10px;
-                      "
-                      class="btn mt-2"
+                     
+                      class="freshbtn btn mt-2"
                     >
                       NEXT
                     </button></a
@@ -505,10 +437,10 @@
             </div>
           </div>
           <div style="margin-top: 120px; margin-bottom: 60px">
-            <h2 class="m-2" style="color: #483da9; font-family: 'Patua One'">
+            <h2 class="heading">
               Make a transfer
             </h2>
-            <p>
+            <p class="text">
               Lorem ipsum, dolor sit amet  consectetur adipisicing elit.
               Quibusdam, excepturi?
             </p>
@@ -516,26 +448,26 @@
           <div class="container">
             <div class="row">
               <div style="background-color: #ffffff; border-radius: 10px;"  class="col-md-5 mx-3 p-5">
-                    <h2 style="color: #032041;font-family: 'Patua One';margin-bottom: 20px;">
+                    <h3 class="heading">
                         Before you login
-                    </h2>
-                    <p style="margin-bottom: 20px;">
+                    </h3>
+                    <p class="text" style="margin-bottom: 20px;">
                       Lorem ipsum dolor <br> amet  consectetur adipisicing elit. Quos, commodi!
                     </p>
                     <hr style="border: 1px solid #E5E9F2;">
-                    <a style="text-decoration: none; color: #6156C2;" href="#">Make a payment</a><br>
-                    <a style="text-decoration: none;color: #6156C2;" href="#">Make a payment</a>
+                    <a style="text-decoration: none; color: #6156C2;" href="#">Accept payment</a><br>
+                    <a style="text-decoration: none;color: #6156C2;" href="#">Accept payment</a>
               </div>
               <div style="background-color: #ffffff; border-radius: 10px;" class="col-md-5 p-5">
-                <h2 style="color: #032041;font-family: 'Patua One';margin-bottom: 20px;">
+                <h3 class="heading">
                     Before you login
-                </h2>
-                <p style="margin-bottom: 20px;">
+                </h3>
+                <p class="text" style="margin-bottom: 20px;">
                   Lorem ipsum dolor <br> amet  consectetur adipisicing elit. Quos, commodi!
                 </p>
                 <hr style="border: 1px solid #E5E9F2;">
-                <a style="text-decoration: none; color: #6156C2;" href="#">Make a payment</a><br>
-                <a style="text-decoration: none;color: #6156C2;" href="#">Make a payment</a>
+                <a style="text-decoration: none; color: #6156C2;" href="#">Accept payment</a><br>
+                <a style="text-decoration: none;color: #6156C2;" href="#">Accept payment</a>
           </div>
             </div>
           </div>

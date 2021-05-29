@@ -12,6 +12,16 @@
     color: #000;
 }
 
+
+.boxnew{
+  background-color: #FFFFFF;
+}
+.boxnew:hover{
+  background-color: #F5F2FD;
+  border: 1px solid #6D3CC8;
+}
+
+
 .allButton{
     font-family: 'TT Commons', sans-serif;
     font-size: 18px;
@@ -63,6 +73,12 @@
     font-weight: 700;
     font-size: 32px;
   }
+  .new-headingg{
+    color: #04004D;
+    font-family: 'TT Commons', sans-serif;
+    font-weight: 700;
+    font-size: 29px;
+  }
   .heading1{
      color: #ffff;
       font-family: 'TT Commons', sans-serif;
@@ -70,6 +86,11 @@
   }
   .text{
     font-family: 'TT Commons', sans-serif;
+  }
+  .newtext{
+    font-family: 'TT Commons', sans-serif;
+    font-weight: bold;
+    color:#04004D ;
   }
   .text1{
     font-family: 'TT Commons', sans-serif;
@@ -113,6 +134,15 @@
 
     
   }
+  .cards {
+    width: 350px;
+    /* padding: 20px; */
+    border-radius: 17px;
+    box-shadow: 2px 2px 4px rgba(77, 76, 76, 0.19);
+    /* min-height: 470px; */
+
+    
+  }
 
   .card:hover {
     transition: all 0.2s ease-out;
@@ -149,6 +179,11 @@
     margin-bottom: 20px;
   }
   .feature-text{
+    color: #04004d; 
+    font-family: 'TT Commons', sans-serif;
+    font-weight: 700;
+  }
+  .feature-text1{
     color: #04004d; 
     font-family: 'TT Commons', sans-serif;
     font-weight: 700;
@@ -426,8 +461,8 @@
       padding: 10px;
     }
 
-    /* NAVBAR TOGGLE BUTTON */
-    .navbar-toggler {
+     /* NAVBAR TOGGLE BUTTON */
+     .navbar-toggler {
       background: none;
       border: none;
     }
@@ -502,3 +537,14 @@
       margin-top: 0;
     }
   }
+
+  .freshbtn{
+
+    background-color: #483DA9;
+    color: white;
+    padding: 10px;
+    width: 100px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+  }
+
